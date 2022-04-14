@@ -56,6 +56,9 @@ prom
     .then(res2 => {
         console.log('res ', res2)
     })
+    .then(res3 => {
+        console.log('res ', res2)
+    })
 
 // just a plug
 export default () => {
