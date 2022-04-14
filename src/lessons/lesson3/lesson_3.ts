@@ -19,9 +19,10 @@ console.log('lesson 3');
 
 //https://learn.javascript.ru/xmlhttprequest
 //https://learn.javascript.ru/fetch
+//https://developer.mozilla.org/ru/docs/Web/HTTP/Status
 
 
-console.log('Start')
+/*console.log('Start')
 
 let prom = new Promise((resolve, rejects) => {
     console.log('Promise Start')
@@ -33,7 +34,16 @@ let prom = new Promise((resolve, rejects) => {
 })
 console.log('prom', prom)
 
-console.log('End')
+console.log('End')*/
+
+
+let prom = new Promise((resolve, rejects) => {
+
+    setTimeout((response) => {
+
+    }, 1000, {httpStatus: 200})
+})
+
 
 // just a plug
 export default () => {
