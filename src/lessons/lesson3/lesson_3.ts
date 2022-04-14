@@ -261,6 +261,7 @@ console.log('prom', prom)
 prom
     .finally(() => {
         console.log('finally 1')
+        throw  new Error('Finally error')
     })
     .then(
         res => {
