@@ -21,10 +21,19 @@ console.log('lesson 3');
 //https://learn.javascript.ru/fetch
 
 
-let prom = new Promise((resolve, rejects) => {
+console.log('Start')
 
+let prom = new Promise((resolve, rejects) => {
+    console.log('Promise Start')
+
+    setTimeout(() => {
+        console.log('setTimeout')
+    }, 100)
+    console.log('Promise End')
 })
 console.log('prom', prom)
+
+console.log('End')
 
 // just a plug
 export default () => {
