@@ -250,7 +250,11 @@ let prom = new Promise((resolve, reject) => {
         } else {
             reject(error)
         }
-    }, 1000, {httpStatus: 200, data: {}, error: {message: 'Not found'}})
+    }, 1000, {
+        httpStatus: 200,
+        data: {name: 'Hanna', age: 20, city: 'Minsk', id: 'sfj4fi3jf8'},
+        error: {message: 'Not found'}
+    })
 })
 console.log('prom', prom)
 
