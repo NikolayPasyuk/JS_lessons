@@ -225,7 +225,7 @@ prom
             console.log('res4 ', res4)
         }
     )
-    .then(err5 => {
+    .catch(err5 => {
         console.log('err5 ', err5)
     })
 
