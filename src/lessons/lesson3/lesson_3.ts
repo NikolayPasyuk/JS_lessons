@@ -256,7 +256,7 @@ console.log('prom', prom)
 
 prom
     .finally(() => {
-
+        console.log('finally 1')
     })
     .then(
         res => {
@@ -265,7 +265,7 @@ prom
         }
     )
     .finally(() => {
-
+        console.log('finally 2')
     })
     .catch(
         err2 => {
@@ -273,7 +273,7 @@ prom
         }
     )
     .finally(() => {
-
+        console.log('finally 3')
     })
 
 
