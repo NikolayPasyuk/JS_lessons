@@ -48,9 +48,14 @@ let prom = new Promise((resolve, rejects) => {
 })
 console.log('prom', prom)
 
-prom.then(res => {
-    console.log('res ',res)
-})
+prom
+    .then(res => {
+        console.log('res ', res)
+        return 10
+    })
+    .then(res2 => {
+        console.log('res ', res2)
+    })
 
 // just a plug
 export default () => {
