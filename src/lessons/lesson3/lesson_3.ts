@@ -57,7 +57,7 @@ prom
         console.log('res ', res2)
     })
     .then(res3 => {
-        console.log('res ', res2)
+        console.log('res ', res3)
     })
 
 // just a plug
