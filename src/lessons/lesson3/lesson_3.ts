@@ -242,7 +242,7 @@ prom
     })*/
 
 
-let prom = new Promise((resolve, reject) => {
+/*let prom = new Promise((resolve, reject) => {
     setTimeout((response) => {
         const {httpStatus, data, error} = response
         if (httpStatus >= 200 && httpStatus < 400) {
@@ -279,8 +279,37 @@ prom
     )
     .finally(() => {
         console.log('finally 3')
-    })
+    })*/
 
+
+console.log('Start')
+
+let prom = new Promise((resolve, reject) => {
+    console.log('Promise Start')
+    setTimeout((response) => {
+        const {httpStatus, data, error} = response
+        if (httpStatus >= 200 && httpStatus < 400) {
+            resolve(data)
+        } else {
+            reject(error)
+        }
+        console.log('setTimeout')
+    }, 1000, {
+        httpStatus: 200,
+        data: {name: 'Hanna', age: 20, city: 'Minsk', id: 'sfj4fi3jf8'},
+        error: {message: 'Not found'}
+    })
+    console.log('Promise End')
+})
+console.log('prom', prom)
+
+prom
+    .then(
+        res => {
+            console.log('res ', res)
+        }
+    )
+console.log('End')
 
 // just a plug
 export default () => {
