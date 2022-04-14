@@ -74,9 +74,9 @@ prom
     .then(res => {
         return new Promise((resolve, reject) => {
             setTimeout((response) => {
-                const {httpStatus, data} = response
+                const {httpStatus, data2} = response
                 if (httpStatus >= 200 && httpStatus < 400) {
-                    resolve(data)
+                    resolve(data2)
                 }
             }, 3000, {httpStatus: 200, data: {currency: 'EUR', amount: 500, accountNumber: 'BY15146367383'}})
         })
