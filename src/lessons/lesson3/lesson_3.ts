@@ -20,6 +20,8 @@ console.log('lesson 3');
 //https://learn.javascript.ru/xmlhttprequest
 //https://learn.javascript.ru/fetch
 //https://developer.mozilla.org/ru/docs/Web/HTTP/Status
+//https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/throw
+//https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Error
 
 
 /*console.log('Start')
@@ -107,7 +109,7 @@ prom
         },
         err => {
             console.log('err ', err)
-            return 100500
+            throw new Error('some error')
         }
     )
     .then(res2 => {
