@@ -107,8 +107,12 @@ prom
         },
         err => {
             console.log('err ', err)
+            return 100500
         }
     )
+    .then(res2 => {
+        console.log('res2 ', res2)
+    })
 
 
 // just a plug
