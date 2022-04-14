@@ -37,8 +37,7 @@ console.log('prom', prom)
 console.log('End')*/
 
 
-let prom = new Promise((resolve, rejects) => {
-
+/*let prom = new Promise((resolve, rejects) => {
     setTimeout((response) => {
         const {httpStatus, data} = response
         if (httpStatus >= 200 && httpStatus < 400) {
@@ -58,7 +57,37 @@ prom
     })
     .then(res3 => {
         console.log('res ', res3)
+    })*/
+
+
+let prom = new Promise((resolve, reject) => {
+    setTimeout((response) => {
+        const {httpStatus, data} = response
+        if (httpStatus >= 200 && httpStatus < 400) {
+            resolve(data)
+        }
+    }, 1000, {httpStatus: 200, data: {name: 'Hanna', age: 20, city: 'Minsk', id: 'sfj4fi3jf8'}})
+})
+console.log('prom', prom)
+
+prom
+    .then(res => {
+        return new Promise((resolve, reject) => {
+            setTimeout((response) => {
+                const {httpStatus, data} = response
+                if (httpStatus >= 200 && httpStatus < 400) {
+                    resolve(data)
+                }
+            }, 3000, {httpStatus: 200, data: {currency: 'EUR', amount: 500, accountNumber: 'BY15146367383'}})
+        })
     })
+    .then(res2 => {
+        console.log('res ', res2)
+    })
+    .then(res3 => {
+        console.log('res ', res3)
+    })
+
 
 // just a plug
 export default () => {
