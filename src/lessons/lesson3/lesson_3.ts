@@ -103,8 +103,12 @@ console.log('prom', prom)
 
 prom
     .then(res => {
-        console.log('res ', res)
-    })
+            console.log('res ', res)
+        },
+        err => {
+            console.log('err ', err)
+        }
+    )
 
 
 // just a plug
