@@ -41,7 +41,9 @@ let prom = new Promise((resolve, rejects) => {
 
     setTimeout((response) => {
         const {httpStatus, data} = response
-
+        if (httpStatus >= 200 && httpStatus < 400) {
+            resolve()
+        }
     }, 1000, {httpStatus: 200, data: {name: 'Hanna', age: 20, city: 'Minsk', id: 'sfj4fi3jf8'}})
 })
 
