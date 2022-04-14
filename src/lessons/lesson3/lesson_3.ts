@@ -176,11 +176,21 @@ prom
             console.log('res3 ', res3)
         }
     )
-    .then(res4 => {
+    /*.then(res4 => {
             console.log('res4 ', res4)
         },
         err4 => {
             console.log('err4 ', err4)
+        }
+    )*/
+    .then(res4 => {
+            console.log('res4 ', res4)
+        }
+    )
+    .then(
+        null,
+        err5 => {
+            console.log('err5 ', err5)
         }
     )
 
