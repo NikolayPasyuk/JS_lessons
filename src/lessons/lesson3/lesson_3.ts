@@ -113,8 +113,12 @@ prom
         }
     )
     .then(res2 => {
-        console.log('res2 ', res2)
-    })
+            console.log('res2 ', res2)
+        },
+
+        err2 => {
+            console.log('err ', err2)
+        })
 
 
 // just a plug
