@@ -40,8 +40,9 @@ console.log('End')*/
 let prom = new Promise((resolve, rejects) => {
 
     setTimeout((response) => {
+        const {httpStatus, data} = response
 
-    }, 1000, {httpStatus: 200})
+    }, 1000, {httpStatus: 200, data: {name: 'Hanna', age: 20, city: 'Minsk', id: 'sfj4fi3jf8'}})
 })
 
 
