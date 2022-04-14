@@ -195,7 +195,7 @@ prom
     )*/
 
 
-let prom = new Promise((resolve, reject) => {
+/*let prom = new Promise((resolve, reject) => {
     setTimeout((response) => {
         const {httpStatus, data, error} = response
         if (httpStatus >= 200 && httpStatus < 400) {
@@ -239,6 +239,41 @@ prom
     )
     .catch(err5 => {
         console.log('err5 ', err5)
+    })*/
+
+
+let prom = new Promise((resolve, reject) => {
+    setTimeout((response) => {
+        const {httpStatus, data, error} = response
+        if (httpStatus >= 200 && httpStatus < 400) {
+            resolve(data)
+        } else {
+            reject(error)
+        }
+    }, 1000, {httpStatus: 200, data: {}, error: {message: 'Not found'}})
+})
+console.log('prom', prom)
+
+prom
+    .finally(() => {
+
+    })
+    .then(
+        res => {
+            console.log('res ', res)
+            throw new Error('some error')
+        }
+    )
+    .finally(() => {
+
+    })
+    .catch(
+        err2 => {
+            console.log('err2 ', err2)
+        }
+    )
+    .finally(() => {
+
     })
 
 
