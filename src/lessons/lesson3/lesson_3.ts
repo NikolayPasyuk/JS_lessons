@@ -48,6 +48,10 @@ let prom = new Promise((resolve, rejects) => {
 })
 console.log('prom', prom)
 
+prom.then(res => {
+    console.log('res ',res)
+})
+
 // just a plug
 export default () => {
 };
