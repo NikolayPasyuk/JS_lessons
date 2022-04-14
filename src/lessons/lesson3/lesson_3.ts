@@ -91,7 +91,7 @@ prom
     })*/
 
 
-let prom = new Promise((resolve, reject) => {
+/*let prom = new Promise((resolve, reject) => {
     setTimeout((response) => {
         const {httpStatus, data, error} = response
         if (httpStatus >= 200 && httpStatus < 400) {
@@ -118,7 +118,71 @@ prom
 
         err2 => {
             console.log('err ', err2)
-        })
+        })*/
+
+
+/*let prom = new Promise((resolve, reject) => {
+    setTimeout((response) => {
+        const {httpStatus, data, error} = response
+        if (httpStatus >= 200 && httpStatus < 400) {
+            resolve(data)
+        } else {
+            reject(error)
+        }
+    }, 1000, {httpStatus: 200, data: {}, error: {message: 'Not found'}})
+})
+console.log('prom', prom)
+
+prom
+    .then(res => {
+            console.log('res ', res)
+            throw new Error('some error')
+        },
+        err => {
+            console.log('err ', err)
+        }
+    )
+    .then(res2 => {
+            console.log('res2 ', res2)
+        },
+
+        err2 => {
+            console.log('err2 ', err2)
+        })*/
+
+let prom = new Promise((resolve, reject) => {
+    setTimeout((response) => {
+        const {httpStatus, data, error} = response
+        if (httpStatus >= 200 && httpStatus < 400) {
+            resolve(data)
+        } else {
+            reject(error)
+        }
+    }, 1000, {httpStatus: 200, data: {}, error: {message: 'Not found'}})
+})
+console.log('prom', prom)
+
+prom
+    .then(res => {
+            console.log('res ', res)
+            throw new Error('some error')
+        }
+    )
+    .then(res2 => {
+            console.log('res2 ', res2)
+        }
+    )
+    .then(res3 => {
+            console.log('res3 ', res3)
+        }
+    )
+    .then(res4 => {
+            console.log('res4 ', res4)
+        },
+        err4 => {
+            console.log('err4 ', err4)
+        }
+    )
 
 
 // just a plug
