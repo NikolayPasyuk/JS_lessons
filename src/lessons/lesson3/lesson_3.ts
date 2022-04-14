@@ -208,19 +208,31 @@ let prom = new Promise((resolve, reject) => {
 console.log('prom', prom)
 
 prom
+    .catch(err0 => {
+        console.log('err0 ', err0)
+    })
     .then(res => {
             console.log('res ', res)
             throw new Error('some error')
         }
     )
+    .catch(err2 => {
+        console.log('err2 ', err2)
+    })
     .then(res2 => {
             console.log('res2 ', res2)
         }
     )
+    .catch(err3 => {
+        console.log('err3 ', err3)
+    })
     .then(res3 => {
             console.log('res3 ', res3)
         }
     )
+    .catch(err4 => {
+        console.log('err4 ', err4)
+    })
     .then(res4 => {
             console.log('res4 ', res4)
         }
