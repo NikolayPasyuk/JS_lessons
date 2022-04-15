@@ -24,7 +24,6 @@ console.log('lesson 2');
 // Task 01
 // Реализовать функцию sum которая суммирует 2 числа следующим образом sum(3)(6) === 9
 
-/*
 let globalScope = {
     outerScope: null,
     sum: 'Function',
@@ -45,7 +44,6 @@ function sum(arg: number) {
 }
 
 console.log(sum(3)(6))
-*/
 
 
 // Task 02

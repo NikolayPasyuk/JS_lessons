@@ -301,7 +301,6 @@ let prom = new Promise((resolve, reject) => {
     })
     console.log('Promise End')
 })
-console.log('prom', prom)
 
 prom
     .then(
