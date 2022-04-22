@@ -323,6 +323,17 @@ console.log('End')*/
     f().catch(console.log);
     console.log('END')*/
 
+
+// function F<T>(arg: T) {
+//     if(typeof arg === 'string') {
+//         arg.
+//     } else if (typeof arg === 'number') {
+//         arg.
+//     }
+// }
+
+
+
 // just a plug
 export default () => {
 };

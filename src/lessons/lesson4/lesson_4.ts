@@ -4,6 +4,147 @@ console.log('lesson 4');
 // https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/
 
 
+
+// Task 1
+// setTimeout(()=> console.log(1), 0);
+// console.log(2);
+// (() => console.log(3))();
+// Promise.resolve(console.log(4));
+
+
+//Task 2
+
+// new Promise((res, rej) => {
+//     console.log(1);
+// })
+// new Promise((res, rej) => {
+//     setTimeout(()=> console.log(2), 0);
+// })
+// Promise.resolve(setTimeout(()=> console.log(3), 0));
+// console.log(4);
+// Promise.reject(console.log(5));
+
+// 1 4 5 2 3
+
+
+//Task 3
+
+// (function(){
+//     setTimeout(()=> console.log(1), 100);
+// })();
+// console.log(2);
+// new Promise((res, rej) => {
+//     setTimeout(()=> console.log(3), 50);
+// })
+// function f() {
+//     console.log(4);
+// }
+// Promise.resolve(console.log(5)).then(() => {
+//     console.log(6)
+// });
+//
+// console.log(7)
+
+// 2 5 6 3 1
+
+//Task 4
+
+// function f(num:number) {
+//     console.log(num);
+// }
+// Promise.resolve(1)
+//     .then(f);
+// (function(){
+//     console.log(2);
+// })();
+// console.log(3);
+// new Promise((res, rej) => {
+//     console.log(4);
+// });
+// setTimeout(f, 0, 5);
+
+// 2 3 4 1 5
+
+// (function(){
+//     setTimeout(()=> console.log(1), 100);
+// })();
+// console.log(2);
+// let i = 0;
+//
+// while (i < 5000000000) {
+//     i++;
+// }
+// new Promise((res, rej) => {
+//     setTimeout(()=> console.log(3), 50);
+// })
+// function f() {
+//     console.log(4);
+// }
+// Promise.resolve(console.log(5))
+
+// 2 3 1 5
+// 2 5 3 1
+// 2 5 1 3
+
+//Task 6
+
+// async function sleep(ms:number) {
+//     return new Promise( (res, rej) => {
+//         setTimeout(() => {
+//             console.log(ms);
+//             res()
+//         }, ms*100)
+//     });
+// }
+
+// async function sleep(ms:number) {
+//     setTimeout(() => {
+//         console.log(ms);
+//     }, ms*100);
+// }
+//
+// async function show() {
+//     await sleep(3)
+//     await sleep(2)
+//     await sleep(1)
+// }
+//
+// show();
+
+
+
+// const pr1 = Promise.resolve(10)
+// const pr2 = Promise.resolve(0)
+//
+// pr1
+//     .then(res => {
+//         console.log(res)
+//         return res + 2
+//     })
+//     .then(res => {
+//         console.log(res)
+//         return res + 2
+//     })
+//     .then(res => {
+//         console.log(res)
+//         return res + 2
+//     })
+//
+// pr2
+//     .then(res => {
+//         console.log(res)
+//         return res + 1
+//     })
+//     .then(res => {
+//         console.log(res)
+//         return res + 1
+//     })
+//     .then(res => {
+//         console.log(res)
+//         return res + 1
+//     })
+
+
 // Task 01
 // Создайте промис, который постоянно находиться в состоянии pending.
 // В конструкторе промиса выведите в консоль сообщение "Promise is created".
