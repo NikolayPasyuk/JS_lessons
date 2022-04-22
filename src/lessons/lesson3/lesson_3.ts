@@ -305,10 +305,13 @@ console.log('End')*/
     })*/
 
 
+console.log('START')
+
 async function f() { // f = async()=>{}
-
+    console.log('MIDDLE')
 }
-
+f();
+console.log('END')
 
 // just a plug
 export default () => {
