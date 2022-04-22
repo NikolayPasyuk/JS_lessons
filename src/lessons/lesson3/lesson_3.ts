@@ -305,23 +305,23 @@ console.log('End')*/
     })*/
 
 
-console.log('START')
+    /*console.log('START')
 
-async function f() { // f = async()=>{}
-    try {
-        console.log('start F')
-        //@ts-ignore
-        const response = await new Promise((res, rej) => {
-            res('!!!!!!!!')
-        })
-        console.log('MIDDLE')
-    } catch (e) {
-        console.log('!!!! e', e)
+    async function f() { // f = async()=>{}
+        try {
+            console.log('start F')
+            //@ts-ignore
+            const response = await new Promise((res, rej) => {
+                res('!!!!!!!!')
+            })
+            console.log('MIDDLE')
+        } catch (e) {
+            console.log('!!!! e', e)
+        }
     }
-}
 
-f().catch(console.log);
-console.log('END')
+    f().catch(console.log);
+    console.log('END')*/
 
 // just a plug
 export default () => {
