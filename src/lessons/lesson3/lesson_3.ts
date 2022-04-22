@@ -308,8 +308,13 @@ console.log('End')*/
 console.log('START')
 
 async function f() { // f = async()=>{}
+    console.log('start F')
+    //@ts-ignore
+    const response = await new Promise((res, rej) => {
+    })
     console.log('MIDDLE')
 }
+
 f();
 console.log('END')
 
