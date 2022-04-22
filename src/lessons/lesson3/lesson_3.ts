@@ -3,7 +3,6 @@ import {rejects} from 'assert';
 console.log('lesson 3');
 
 
-
 /*console.log('Start')
 
 let prom = new Promise((resolve, rejects) => {
@@ -292,12 +291,17 @@ console.log('End')*/
 
 
 Promise.resolve(10)
-    //@ts-ignore
-    .finally((res) => {
-        console.log('finally', res)
+    .finally(() => {
+        console.log('finally')
     })
     .then(console.log)
+    .finally(() => {
+        console.log('finally')
+    })
     .catch(console.log)
+    .finally(() => {
+        console.log('finally')
+    })
 
 
 // just a plug
