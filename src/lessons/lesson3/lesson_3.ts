@@ -290,17 +290,17 @@ prom
 console.log('End')*/
 
 
-Promise.resolve(10)
+Promise.reject(10)
     .finally(() => {
         console.log('finally')
     })
     .then(console.log)
     .finally(() => {
-        console.log('finally')
+        console.log('finally 2')
     })
     .catch(console.log)
     .finally(() => {
-        console.log('finally')
+        console.log('finally 3')
     })
 
 
