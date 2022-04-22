@@ -311,13 +311,12 @@ async function f() { // f = async()=>{}
     console.log('start F')
     //@ts-ignore
     const response = await new Promise((res, rej) => {
-        rej(
-        )
+        rej('!!!!!!!!')
     })
     console.log('MIDDLE')
 }
 
-f();
+f().catch(console.log);
 console.log('END')
 
 // just a plug
