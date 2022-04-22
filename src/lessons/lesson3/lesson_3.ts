@@ -311,6 +311,8 @@ async function f() { // f = async()=>{}
     console.log('start F')
     //@ts-ignore
     const response = await new Promise((res, rej) => {
+        rej(
+        )
     })
     console.log('MIDDLE')
 }
