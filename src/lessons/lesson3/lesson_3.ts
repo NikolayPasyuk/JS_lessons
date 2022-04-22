@@ -290,10 +290,9 @@ prom
 console.log('End')*/
 
 
-Promise.reject(10)
+Promise.resolve(10)
     .finally(() => {
         console.log('finally')
-        return 100500
     })
     .then(console.log)
     .finally(() => {
