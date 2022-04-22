@@ -290,7 +290,7 @@ prom
 console.log('End')*/
 
 
-Promise.resolve(10)
+/*Promise.resolve(10)
     .finally(() => {
         console.log('finally')
         throw 9000
@@ -302,7 +302,12 @@ Promise.resolve(10)
     .catch(console.log)
     .finally(() => {
         console.log('finally 3')
-    })
+    })*/
+
+
+async function f() { // f = async()=>{}
+
+}
 
 
 // just a plug
