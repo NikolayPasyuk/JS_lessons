@@ -282,7 +282,7 @@ prom
     })*/
 
 
-console.log('Start')
+/*console.log('Start')
 
 let prom = new Promise((resolve, reject) => {
     console.log('Promise Start')
@@ -308,7 +308,17 @@ prom
             console.log('res ', res)
         }
     )
-console.log('End')
+console.log('End')*/
+
+
+Promise.resolve(10)
+    //@ts-ignore
+    .finally((res) => {
+        console.log('finally', res)
+    })
+    .then(console.log)
+    .catch(console.log)
+
 
 // just a plug
 export default () => {
