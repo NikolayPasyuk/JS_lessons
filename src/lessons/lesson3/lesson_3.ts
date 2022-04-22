@@ -308,12 +308,16 @@ console.log('End')*/
 console.log('START')
 
 async function f() { // f = async()=>{}
-    console.log('start F')
-    //@ts-ignore
-    const response = await new Promise((res, rej) => {
-        rej('!!!!!!!!')
-    })
-    console.log('MIDDLE')
+    try {
+        console.log('start F')
+        //@ts-ignore
+        const response = await new Promise((res, rej) => {
+            rej('!!!!!!!!')
+        })
+        console.log('MIDDLE')
+    } catch (e) {
+        console.log('!!!! e', e)
+    }
 }
 
 f().catch(console.log);
