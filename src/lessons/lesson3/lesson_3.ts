@@ -293,6 +293,7 @@ console.log('End')*/
 Promise.resolve(10)
     .finally(() => {
         console.log('finally')
+        throw 9000
     })
     .then(console.log)
     .finally(() => {
