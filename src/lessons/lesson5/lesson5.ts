@@ -160,7 +160,7 @@ obj2.f = obj.arrow()
 obj2.f()*/
 
 
-let obj = {
+/*let obj = {
     name: 'Nick',
     arrow: () => {
         console.log('this in function arrow ', this)
@@ -171,7 +171,24 @@ let obj = {
 }
 let obj2 = {name: 'Hanna'}
 obj2.f = obj.arrow
-obj2.f()()
+obj2.f()()*/
+
+
+let obj = {
+    name: 'Nick',
+    f() {
+        console.log('this in function F ', this)
+        return () => {
+            console.log('this in function arrow ', this)
+        }
+    }
+}
+let obj2 = {name: 'Hanna'}
+
+obj2.a = obj.f()
+obj2.a()
+const outerFunc = obj2.a
+outerFunc()
 
 
 // Task 01
