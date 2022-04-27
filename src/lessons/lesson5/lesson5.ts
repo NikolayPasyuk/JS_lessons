@@ -174,7 +174,7 @@ obj2.f = obj.arrow
 obj2.f()()*/
 
 
-let obj = {
+/*let obj = {
     name: 'Nick',
     f() {
         console.log('this in function F ', this)
@@ -188,7 +188,28 @@ let obj2 = {name: 'Hanna'}
 obj2.a = obj.f()
 obj2.a()
 const outerFunc = obj2.a
-outerFunc()
+outerFunc()*/
+
+
+/*let obj = {
+    name: 'Nick',
+    f() {
+        setTimeout(function () {
+            console.log('f', this)
+        }, 500)
+        setTimeout(() => {
+            console.log('f', this)
+        }, 500)
+    }
+}
+obj.f()
+
+function setTimeout(callback, delay, ...args) {
+    if (delay) {
+        callback(...args)
+    }
+}*/
+
 
 
 // Task 01
