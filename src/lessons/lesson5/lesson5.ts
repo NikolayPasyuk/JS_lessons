@@ -23,6 +23,11 @@ console.log('Lesson 5');
 
 //function/class, block code (anonymous block), conditional, switch, try/catch/finally
 
+/*function f() {
+    console.log('this in function f ', this)
+}
+f()*/
+
 
 // Task 01
 // Дан объект someObj, реализуйте функцию greeting и присвойте ее ключу объекта с аналогичным именем.
