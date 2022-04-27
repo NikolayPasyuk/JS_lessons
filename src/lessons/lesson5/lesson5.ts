@@ -41,6 +41,31 @@ obj.f = f;
 obj.f()*/
 
 
+/*let obj = {
+    name: 'Nick',
+    f() {
+        console.log('this in function f ', this)
+    }
+}
+let globalVariable = obj.f
+globalVariable()*/
+
+/*let obj = {
+    name: 'Nick',
+    f() {
+        console.log('this in function f ', this)
+    }
+}
+let obj2 = {name: 'Hanna'}
+
+obj2.innerObj = {name: 'InnerName'}
+obj2.innerObj.f = obj.f
+obj2.innerObj.f()*/
+
+
+
+
+
 // Task 01
 // Дан объект someObj, реализуйте функцию greeting и присвойте ее ключу объекта с аналогичным именем.
 // Функция должна вернуть строку `My name is ${name}. I am ${age}`, где name и age берутся из свойств объекта
