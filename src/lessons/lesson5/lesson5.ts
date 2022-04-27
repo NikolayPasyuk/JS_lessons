@@ -63,7 +63,39 @@ obj2.innerObj.f = obj.f
 obj2.innerObj.f()*/
 
 
+/*let obj = {
+    name: 'Nick',
+    f() {
+        console.log('this in function f ', this)
 
+        function let obj = {
+    name: 'Nick',
+    f() {
+        console.log('this in function f ', this)
+
+        function innerF() {
+            console.log('this in function innerF ', this)
+        }
+
+        innerF()
+    }
+}
+let obj2 = {name: 'Hanna'}
+
+obj2.innerObj = {name: 'InnerName'}
+obj2.innerObj.f = obj.f
+obj2.innerObj.f()() {
+            console.log('this in function innerF ', this)
+        }
+
+        innerF()
+    }
+}
+let obj2 = {name: 'Hanna'}
+
+obj2.innerObj = {name: 'InnerName'}
+obj2.innerObj.f = obj.f
+obj2.innerObj.f()*/
 
 
 // Task 01
