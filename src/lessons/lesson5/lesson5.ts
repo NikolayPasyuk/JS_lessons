@@ -137,6 +137,15 @@ obj.a = arrow
 obj.a()*/
 
 
+/*let obj = {
+    name: 'Nick',
+    arrow: () => {
+        console.log('this in function arrow ', this)
+    }
+}
+obj.arrow()*/
+
+
 // Task 01
 // Дан объект someObj, реализуйте функцию greeting и присвойте ее ключу объекта с аналогичным именем.
 // Функция должна вернуть строку `My name is ${name}. I am ${age}`, где name и age берутся из свойств объекта
@@ -146,7 +155,9 @@ type someObjType = {
     age: number;
 }
 
-let someObj: someObjType = {
+let someObj
+    :
+    someObjType = {
     name: 'Eugene',
     age: 32
 }
