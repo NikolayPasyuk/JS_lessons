@@ -211,6 +211,31 @@ function setTimeout(callback, delay, ...args) {
 }*/
 
 
+//Bind
+let obj = {name: 'Hanna'}
+
+function f() {
+    //@ts-ignore
+    console.log(this.name)
+}
+
+// obj.name = 'Masha'
+// obj = {name: 'Masha'}
+
+//@ts-ignore
+// obj.f = f
+//@ts-ignore
+// obj.f()
+
+/*const bindedFunc = f.bind(obj)
+bindedFunc()
+console.log(obj)*/
+
+// f.bind(obj)()
+
+// obj.name = 'Masha'
+// obj = {name: 'Masha'}
+
 
 // Task 01
 // Дан объект someObj, реализуйте функцию greeting и присвойте ее ключу объекта с аналогичным именем.
