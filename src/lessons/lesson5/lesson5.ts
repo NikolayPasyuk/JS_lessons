@@ -212,12 +212,14 @@ function setTimeout(callback, delay, ...args) {
 
 
 //Bind
+/*
 let obj = {name: 'Hanna'}
 
 function f() {
     //@ts-ignore
     console.log(this.name)
 }
+*/
 
 // obj.name = 'Masha'
 // obj = {name: 'Masha'}
@@ -235,6 +237,19 @@ console.log(obj)*/
 
 // obj.name = 'Masha'
 // obj = {name: 'Masha'}
+
+
+let obj = {name: 'Hanna'}
+let obj2 = {name: 'Masha'}
+let obj3 = {name: 'Nick'}
+
+function f(a1: number, a2: number, a3: number) {
+    //@ts-ignore
+    console.log(this.name, a1, a2, a3)
+}
+
+// f.bind(obj, 50,111)(1000)
+f.bind(obj, 100).bind(obj2, 200).bind(obj3, 500)()
 
 
 // Task 01
