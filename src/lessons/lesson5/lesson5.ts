@@ -20,6 +20,15 @@ console.log('Lesson 5');
 // https://learn.javascript.ru/call-apply-decorators
 // https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%BE-%D0%BE-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B0%D1%85-apply-call-%D0%B8-bind-%D0%BD%D0%B5%D0%BE%D0%B1%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D1%8B%D1%85-%D0%BA%D0%B0%D0%B6%D0%B4%D0%BE%D0%BC%D1%83-javascript-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D1%83-ddd5f9b06290
 
+//flat
+//https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/flat
+
+//Односвязные и двусвязные списки
+//бинарное дерево
+
+
+
+
 
 //function/class, block code (anonymous block), conditional, switch, try/catch/finally
 
@@ -239,7 +248,6 @@ console.log(obj)*/
 // obj = {name: 'Masha'}
 
 
-
 /*
 let obj = {name: 'Hanna'}
 let obj2 = {name: 'Masha'}
@@ -262,13 +270,12 @@ function f(a1: number, a2: number, a3: number) {
 // f.apply(obj2, [30, 40, 50])
 
 
-
-
 function f() {
     // console.log(arguments)
     //@ts-ignore
     // console.log([...arguments].filter(el => el > 60))
-    console.log([].filter.call(arguments, el => el > 80))
+    // console.log([].filter.call(arguments, el => el > 80))
+    console.log([].filter.apply(arguments, [el => el > 80]))
 }
 
 //@ts-ignore
