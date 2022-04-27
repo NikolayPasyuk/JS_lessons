@@ -23,10 +23,22 @@ console.log('Lesson 5');
 
 //function/class, block code (anonymous block), conditional, switch, try/catch/finally
 
+
 /*function f() {
     console.log('this in function f ', this)
 }
 f()*/
+
+
+/*let obj = {name: 'Nick'}
+
+function f() {
+    console.log('this in function f ', this)
+}
+
+f()
+obj.f = f;
+obj.f()*/
 
 
 // Task 01
