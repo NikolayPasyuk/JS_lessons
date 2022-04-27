@@ -239,6 +239,8 @@ console.log(obj)*/
 // obj = {name: 'Masha'}
 
 
+
+/*
 let obj = {name: 'Hanna'}
 let obj2 = {name: 'Masha'}
 let obj3 = {name: 'Nick'}
@@ -247,17 +249,30 @@ function f(a1: number, a2: number, a3: number) {
     //@ts-ignore
     console.log(this.name, a1, a2, a3)
 }
+*/
 
 // f.bind(obj, 50,111)(1000)
 // f.bind(obj, 100).bind(obj2, 200).bind(obj3, 500)()
 
 
 //Call
-f.call(obj3, 50, 30, 10)
+// f.call(obj3, 50, 30, 10)
 
 //Apply
-f.apply(obj2, [30, 40, 50])
+// f.apply(obj2, [30, 40, 50])
 
+
+
+
+function f() {
+    // console.log(arguments)
+    //@ts-ignore
+    // console.log([...arguments].filter(el => el > 60))
+    console.log([].filter.call(arguments, el => el > 80))
+}
+
+//@ts-ignore
+f(90, 10, 80, 50, 80)
 
 // Task 01
 // Дан объект someObj, реализуйте функцию greeting и присвойте ее ключу объекта с аналогичным именем.
