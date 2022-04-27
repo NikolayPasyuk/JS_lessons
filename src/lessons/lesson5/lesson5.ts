@@ -114,7 +114,17 @@ obj2.f = obj.f
 obj2.f()()*/
 
 
-let obj = {
+/*let obj = {
+    name: 'Nick'
+}
+
+const arrow = () => {
+    console.log('this in function arrow ', this)
+}
+arrow()*/
+
+
+/*let obj = {
     name: 'Nick'
 }
 
@@ -122,6 +132,9 @@ const arrow = () => {
     console.log('this in function arrow ', this)
 }
 arrow()
+
+obj.a = arrow
+obj.a()*/
 
 
 // Task 01
