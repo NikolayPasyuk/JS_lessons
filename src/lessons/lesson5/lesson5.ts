@@ -249,7 +249,14 @@ function f(a1: number, a2: number, a3: number) {
 }
 
 // f.bind(obj, 50,111)(1000)
-f.bind(obj, 100).bind(obj2, 200).bind(obj3, 500)()
+// f.bind(obj, 100).bind(obj2, 200).bind(obj3, 500)()
+
+
+//Call
+f.call(obj3, 50, 30, 10)
+
+//Apply
+f.apply(obj2, [30, 40, 50])
 
 
 // Task 01
