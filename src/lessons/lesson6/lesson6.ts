@@ -215,6 +215,7 @@ obj2.incrementCount()
 console.log(obj.getCurrentCount())
 console.log(obj2.getCurrentCount())*/
 
+
 //нативная реализация
 /*class Test {
     #count: number = 0
@@ -235,6 +236,26 @@ obj.incrementCount()
 obj.incrementCount()
 console.log(obj.getCurrentCount())*/
 
+
+/*class Test {
+    private count: number = 0
+
+    getCurrentCount() {
+        return this.count
+    }
+
+    incrementCount() {
+        this.count = this.count + 1
+    }
+}
+
+class Test2 extends Test {
+    getCount() {
+        console.log(this.count)
+    }
+}
+
+let obj = new Test()*/
 
 
 
