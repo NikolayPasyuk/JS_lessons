@@ -193,7 +193,7 @@ let obj=new Test('Slava',18)
 console.log(obj)*/
 
 
-class Test {
+/*class Test {
     private count: number = 0
 
     constructor() {}
@@ -213,7 +213,31 @@ obj.incrementCount()
 obj.incrementCount()
 obj2.incrementCount()
 console.log(obj.getCurrentCount())
-console.log(obj2.getCurrentCount())
+console.log(obj2.getCurrentCount())*/
+
+//нативная реализация
+/*class Test {
+    #count: number = 0
+
+    constructor() {}
+
+    getCurrentCount(){
+        return this.#count
+    }
+    incrementCount(){
+        this.#count = this.#count + 1
+    }
+}
+let obj=new Test()
+
+obj.incrementCount()
+obj.incrementCount()
+obj.incrementCount()
+console.log(obj.getCurrentCount())*/
+
+
+
+
 
 
 // Task 01
