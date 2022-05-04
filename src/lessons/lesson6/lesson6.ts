@@ -186,7 +186,7 @@ console.log(obj)*/
 
 
 class Test {
-    constructor(public name: string, public age: number) {
+    constructor(public readonly name: string, public age: number) {
     }
 }
 let obj=new Test('Slava',18)
