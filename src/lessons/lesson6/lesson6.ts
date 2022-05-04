@@ -67,6 +67,19 @@ let obj2 = new Test('Masha', 20);
 console.log(obj)
 console.log(obj2)*/
 
+
+/*function Test(name, age) {
+    this.name = name
+    this.age = age
+}
+Test.prototype.someFunction = function(){}
+
+let obj = new Test('Nick', 20);
+let obj2 = new Test('Masha', 20);
+console.log(obj)
+console.log(obj2)*/
+
+
 // Task 01
 // Создайте структуру с именем student, содержащую поля: имя и фамилия, номер группы, успеваемость (массив из пяти элементов).
 // Создать массив из десяти элементов такого типа, упорядочить записи по возрастанию среднего балла.
