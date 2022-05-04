@@ -103,7 +103,7 @@ let obj = new Test()
 console.log(obj)*/
 
 
-class Test {
+/*class Test {
     name: string;
     age: number;
     // sayYo: Function
@@ -121,7 +121,7 @@ class Test {
 
     arrow = () => {
     }
-}
+}*/
 
 /*let obj = new Test('Nick', 20)
 console.log(obj)
@@ -140,7 +140,7 @@ let obj2 = new Test2('Nick', 30, 'Minsk')
 console.log(obj)*/
 
 
-let obj = new Test('Nick', 20)
+/*let obj = new Test('Nick', 20)
 console.log(obj)
 
 
@@ -154,7 +154,15 @@ class Test2 extends Test {
 }
 
 let obj2 = new Test2()
-console.log(obj2)
+console.log(obj2)*/
+
+
+class Helper{
+    help1(){}
+    help2(){}
+}
+
+
 
 // Task 01
 // Создайте структуру с именем student, содержащую поля: имя и фамилия, номер группы, успеваемость (массив из пяти элементов).
