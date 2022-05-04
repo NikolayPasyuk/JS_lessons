@@ -23,12 +23,23 @@ console.log(obj)
 console.log(obj2)*/
 
 
+
 /*function Test(name, age) {
     this.name = name
     this.age = age
 }
 
 let obj = Test('Nick', 20);
+console.log(obj)*/
+
+
+
+/*function Test(name, age) {
+    this.name = name
+    this.age = age
+}
+
+let obj = new Test('Nick', 20);
 console.log(obj)*/
 
 
