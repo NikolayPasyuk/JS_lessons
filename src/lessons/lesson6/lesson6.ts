@@ -95,13 +95,26 @@ let obj = new (Test as any)('Nick', 20);
 console.log(obj)*/
 
 
-
 /*class Test {
 
 }
 
 let obj = new Test()
 console.log(obj)*/
+
+
+class Test {
+    name: string;
+    age: number
+
+    constructor(name: string, age: number) {
+        this.name = name
+        this.age = age
+    }
+}
+
+let obj = new Test('Nick', 20)
+console.log(obj)
 
 
 // Task 01
