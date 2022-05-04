@@ -105,11 +105,14 @@ console.log(obj)*/
 
 class Test {
     name: string;
-    age: number
+    age: number;
+    sayYo: Function
 
     constructor(name: string, age: number) {
         this.name = name
         this.age = age
+        this.sayYo = function () {
+        }
     }
 
     someFunc() {
