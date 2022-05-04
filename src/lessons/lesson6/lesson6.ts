@@ -258,7 +258,7 @@ class Test2 extends Test {
 let obj = new Test()*/
 
 
-class Test {
+/*class Test {
     protected count: number = 0
 
     getCurrentCount() {
@@ -289,8 +289,39 @@ obj2.incrementCount()
 obj2.getCount()
 obj2.incrementCount()
 console.log(obj2.getCurrentCount())
-obj2.getCount()
+obj2.getCount()*/
 
+
+class Test {
+    name: string;
+    age: number;
+
+    constructor(name: string, age: number) {
+        this.name = name
+        this.age = age
+    }
+
+    someFunc() {
+        console.log('Hi from test')
+    }
+
+    arrow = () => {
+    }
+}
+
+class Test2 extends Test {
+    constructor(name: string, age: number) {
+        super(name, age);
+    }
+
+    someFunc() {
+        console.log('Test2 is greeting You!!!')
+    }
+}
+
+let obj = new Test2('Yo', 123)
+console.log(obj)
+obj.someFunc()
 
 // Task 01
 // Создайте структуру с именем student, содержащую поля: имя и фамилия, номер группы, успеваемость (массив из пяти элементов).
