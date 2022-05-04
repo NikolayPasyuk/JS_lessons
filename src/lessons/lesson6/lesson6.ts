@@ -316,6 +316,7 @@ class Test2 extends Test {
 
     someFunc() {
         console.log('Test2 is greeting You!!!')
+        super.someFunc()
     }
 }
 
