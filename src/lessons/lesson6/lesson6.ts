@@ -258,7 +258,38 @@ class Test2 extends Test {
 let obj = new Test()*/
 
 
+class Test {
+    protected count: number = 0
 
+    getCurrentCount() {
+        return this.count
+    }
+
+    incrementCount() {
+        this.count = this.count + 1
+    }
+}
+
+let obj = new Test()
+obj.incrementCount()
+obj.incrementCount()
+obj.incrementCount()
+// console.log(obj.getCurrentCount())
+
+class Test2 extends Test {
+    getCount() {
+        console.log(this.count * 5)
+    }
+}
+
+let obj2 = new Test2()
+obj2.incrementCount()
+obj2.getCount()
+obj2.incrementCount()
+obj2.getCount()
+obj2.incrementCount()
+console.log(obj2.getCurrentCount())
+obj2.getCount()
 
 
 // Task 01
