@@ -157,7 +157,7 @@ let obj2 = new Test2()
 console.log(obj2)*/
 
 
-class Helper{
+/*class Helper{
     help1(){}
     help2(){}
 }
@@ -180,6 +180,14 @@ class Test extends SuperHelp{
 
     someFunc() {}
     arrow = () => {}
+}
+let obj=new Test('Slava',18)
+console.log(obj)*/
+
+
+class Test {
+    constructor(public name: string, public age: number) {
+    }
 }
 let obj=new Test('Slava',18)
 console.log(obj)
