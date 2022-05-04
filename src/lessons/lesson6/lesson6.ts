@@ -116,11 +116,27 @@ class Test {
         // this.bindeFunc = this.someFunc.bind(this)
     }
 
-    someFunc() {}
-    arrow=()=>{}
+    someFunc() {
+    }
+
+    arrow = () => {
+    }
 }
 
 let obj = new Test('Nick', 20)
+console.log(obj)
+
+
+class Test2 extends Test {
+    city: string
+
+    constructor(name: string, age: number, city: string) {
+        super(name, age);
+        this.city = city
+    }
+}
+
+let obj2 = new Test2('Nick', 30, 'Minsk')
 console.log(obj)
 
 
