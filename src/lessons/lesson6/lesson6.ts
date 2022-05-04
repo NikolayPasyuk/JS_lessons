@@ -123,7 +123,7 @@ class Test {
     }
 }
 
-let obj = new Test('Nick', 20)
+/*let obj = new Test('Nick', 20)
 console.log(obj)
 
 
@@ -137,8 +137,24 @@ class Test2 extends Test {
 }
 
 let obj2 = new Test2('Nick', 30, 'Minsk')
+console.log(obj)*/
+
+
+let obj = new Test('Nick', 20)
 console.log(obj)
 
+
+class Test2 extends Test {
+    city: string
+
+    constructor(name: string = 'Nick', age: number = 50, city: string = 'Minsk') {
+        super(name, age);
+        this.city = city
+    }
+}
+
+let obj2 = new Test2()
+console.log(obj)
 
 // Task 01
 // Создайте структуру с именем student, содержащую поля: имя и фамилия, номер группы, успеваемость (массив из пяти элементов).
