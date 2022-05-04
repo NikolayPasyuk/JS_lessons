@@ -161,7 +161,12 @@ class Helper{
     help1(){}
     help2(){}
 }
+class SuperHelp extends Helper{
+    help3(){}
+}
 
+let helpObj=new SuperHelp()
+console.log(helpObj)
 
 
 // Task 01
