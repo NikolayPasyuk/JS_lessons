@@ -107,17 +107,17 @@ class Test {
     name: string;
     age: number;
     // sayYo: Function
-    bindeFunc:Function
+    // bindeFunc:Function
 
     constructor(name: string, age: number) {
         this.name = name
         this.age = age
         // this.sayYo = function () {}
-        this.bindeFunc = this.someFunc.bind(this)
+        // this.bindeFunc = this.someFunc.bind(this)
     }
 
-    someFunc() {
-    }
+    someFunc() {}
+    arrow=()=>{}
 }
 
 let obj = new Test('Nick', 20)
