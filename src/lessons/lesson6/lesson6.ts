@@ -292,7 +292,7 @@ console.log(obj2.getCurrentCount())
 obj2.getCount()*/
 
 
-class Test {
+/*class Test {
     name: string;
     age: number;
 
@@ -322,6 +322,10 @@ class Test2 extends Test {
         console.log('Test2 is greeting You!!!')
         super.someFunc()
     }
+
+    superFunc() {
+        console.log('000')
+    }
 }
 
 class Test3 extends Test2 {
@@ -337,7 +341,10 @@ class Test3 extends Test2 {
 
 let obj = new Test3('Yo', 123, 'Minsk')
 console.log(obj)
-obj.superFunc()
+obj.superFunc()*/
+
+
+
 
 // Task 01
 // Создайте структуру с именем student, содержащую поля: имя и фамилия, номер группы, успеваемость (массив из пяти элементов).
