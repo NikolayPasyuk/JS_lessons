@@ -106,13 +106,14 @@ console.log(obj)*/
 class Test {
     name: string;
     age: number;
-    sayYo: Function
+    // sayYo: Function
+    bindeFunc:Function
 
     constructor(name: string, age: number) {
         this.name = name
         this.age = age
-        this.sayYo = function () {
-        }
+        // this.sayYo = function () {}
+        this.bindeFunc = this.someFunc.bind(this)
     }
 
     someFunc() {
