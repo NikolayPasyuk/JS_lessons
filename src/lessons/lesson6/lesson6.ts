@@ -95,6 +95,7 @@ let obj = new (Test as any)('Nick', 20);
 console.log(obj)*/
 
 
+
 /*class Test {
 
 }
