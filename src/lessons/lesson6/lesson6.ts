@@ -78,7 +78,6 @@ console.log(obj)
 console.log(obj2)*/
 
 
-
 /*type TestType = {
     name: string,
     age: number
@@ -96,10 +95,12 @@ let obj = new (Test as any)('Nick', 20);
 console.log(obj)*/
 
 
+/*class Test {
 
+}
 
-
-
+let obj = new Test()
+console.log(obj)*/
 
 
 // Task 01
