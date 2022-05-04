@@ -111,6 +111,9 @@ class Test {
         this.name = name
         this.age = age
     }
+
+    someFunc() {
+    }
 }
 
 let obj = new Test('Nick', 20)
