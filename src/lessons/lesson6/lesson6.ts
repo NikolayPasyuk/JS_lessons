@@ -307,6 +307,10 @@ class Test {
 
     arrow = () => {
     }
+
+    superFunc() {
+        console.log('111111')
+    }
 }
 
 class Test2 extends Test {
@@ -320,9 +324,20 @@ class Test2 extends Test {
     }
 }
 
-let obj = new Test2('Yo', 123)
+class Test3 extends Test2 {
+    constructor(name: string, age: number, public city: string) {
+        super(name, age);
+    }
+
+    superFunc() {
+        console.log('222')
+        super.superFunc()
+    }
+}
+
+let obj = new Test3('Yo', 123, 'Minsk')
 console.log(obj)
-obj.someFunc()
+obj.superFunc()
 
 // Task 01
 // Создайте структуру с именем student, содержащую поля: имя и фамилия, номер группы, успеваемость (массив из пяти элементов).
