@@ -29,7 +29,6 @@ console.log('Lesson 5');
 
 
 
-
 //function/class, block code (anonymous block), conditional, switch, try/catch/finally
 
 
