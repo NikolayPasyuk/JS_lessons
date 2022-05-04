@@ -185,12 +185,35 @@ let obj=new Test('Slava',18)
 console.log(obj)*/
 
 
-class Test {
+/*class Test {
     constructor(public readonly name: string, public age: number) {
     }
 }
 let obj=new Test('Slava',18)
-console.log(obj)
+console.log(obj)*/
+
+
+class Test {
+    private count: number = 0
+
+    constructor() {}
+
+    getCurrentCount(){
+        return this.count
+    }
+    incrementCount(){
+        this.count = this.count + 1
+    }
+}
+let obj=new Test()
+let obj2=new Test()
+
+obj.incrementCount()
+obj.incrementCount()
+obj.incrementCount()
+obj2.incrementCount()
+console.log(obj.getCurrentCount())
+console.log(obj2.getCurrentCount())
 
 
 // Task 01
