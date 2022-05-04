@@ -168,6 +168,22 @@ class SuperHelp extends Helper{
 let helpObj=new SuperHelp()
 console.log(helpObj)
 
+class Test extends SuperHelp{
+    name: string;
+    age: number;
+
+    constructor(name: string, age: number) {
+        super()
+        this.name = name
+        this.age = age
+    }
+
+    someFunc() {}
+    arrow = () => {}
+}
+let obj=new Test('Slava',18)
+console.log(obj)
+
 
 // Task 01
 // Создайте структуру с именем student, содержащую поля: имя и фамилия, номер группы, успеваемость (массив из пяти элементов).
