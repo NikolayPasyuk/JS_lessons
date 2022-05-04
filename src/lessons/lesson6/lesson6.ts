@@ -23,7 +23,6 @@ console.log(obj)
 console.log(obj2)*/
 
 
-
 /*function Test(name, age) {
     this.name = name
     this.age = age
@@ -31,7 +30,6 @@ console.log(obj2)*/
 
 let obj = Test('Nick', 20);
 console.log(obj)*/
-
 
 
 /*function Test(name, age) {
@@ -78,6 +76,30 @@ let obj = new Test('Nick', 20);
 let obj2 = new Test('Masha', 20);
 console.log(obj)
 console.log(obj2)*/
+
+
+
+/*type TestType = {
+    name: string,
+    age: number
+}
+
+function Test(this: TestType, name: string, age: number) {
+    this.name = name
+    this.age = age
+}
+
+Test.prototype.someFunction = function () {
+}
+
+let obj = new (Test as any)('Nick', 20);
+console.log(obj)*/
+
+
+
+
+
+
 
 
 // Task 01
