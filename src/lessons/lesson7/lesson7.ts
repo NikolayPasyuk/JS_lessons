@@ -23,6 +23,14 @@ console.log('Lesson 7');
 /*function f() {}
 console.log(typeof f.prototype)*/
 
+/*console.dir(Array)
+console.dir([])*/
+
+/*const arrayPrototypeObj = Object.getPrototypeOf([])
+console.log(Array.prototype === arrayPrototypeObj)
+//@ts-ignore
+console.log(Array.prototype === [].__proto__)*/
+
 
 //Task 01
 // Реализовать класс Animal который принимает name(по умолчанию 'Animal') в качестве параметра, у которого будет 3
