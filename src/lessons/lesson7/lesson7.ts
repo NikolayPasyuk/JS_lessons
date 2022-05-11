@@ -26,6 +26,7 @@ console.log(typeof f.prototype)*/
 /*console.dir(Array)
 console.dir([])*/
 
+
 /*const arrayPrototypeObj = Object.getPrototypeOf([])
 console.log(Array.prototype === arrayPrototypeObj)
 //@ts-ignore
@@ -35,6 +36,33 @@ console.log(Array.prototype === [].__proto__)*/
 console.log(obj)
 //@ts-ignore
 console.log(obj.__proto__)*/
+
+
+/*
+class Test {
+    constructor(public name: string) {
+    }
+
+    getName() {
+        return this.name
+    }
+}
+
+//@ts-ignore
+Test.prototype.sayHi = function () {
+}
+
+let obj = new Test('Hi')
+console.dir(Test)
+console.log(obj)
+
+//@ts-ignore
+obj.__proto__.someFunc = function () {}
+let obj2 = new Test('Hello')
+console.log(obj2)
+*/
+
+
 
 
 //Task 01
