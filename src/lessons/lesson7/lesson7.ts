@@ -79,6 +79,66 @@ let obj2 = new Test('Hello')
 console.log(obj2)*/
 
 
+//@ts-ignore
+
+/*class Test {
+    constructor(public name: string) {
+    }
+
+    getName() {
+        return this.name
+    }
+}
+Test.prototype.yo = function (){}
+
+let obj = new Test('Hi')
+let arrayPrototypeObj = Object.getPrototypeOf(obj)
+//@ts-ignore
+arrayPrototypeObj = {f:function (){}}
+console.log(obj)
+
+//@ts-ignore
+obj.__proto__={f:function (){}}
+console.log(obj)
+
+let arrayPrototypeObj = Object.getPrototypeOf(obj)
+delete arrayPrototypeObj.getName
+
+let obj2 = new Test('Yo')
+console.log(obj2)*/
+
+
+/*
+class Test {
+    constructor(public name: string) {
+    }
+
+    getName() {
+        return this.name
+    }
+}
+
+class SuperTest extends Test {
+    constructor(name: string) {
+        super(name);
+    }
+
+    getName() {
+        return ''
+    }
+}
+
+let obj = new SuperTest('Yo')
+//@ts-ignore
+obj.__proto__.__proto__.getName = 50
+const objParentPrototype = Object.getPrototypeOf(Object.getPrototypeOf(obj))
+objParentPrototype.getName = 100
+console.log(obj)
+*/
+
+
+
+
 //Task 01
 // Реализовать класс Animal который принимает name(по умолчанию 'Animal') в качестве параметра, у которого будет 3
 // метода walk, eat, sleep - каждый метод должен выводить в консоль строку имя + действие. Пример:
