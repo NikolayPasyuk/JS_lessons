@@ -31,6 +31,11 @@ console.log(Array.prototype === arrayPrototypeObj)
 //@ts-ignore
 console.log(Array.prototype === [].__proto__)*/
 
+/*const obj = {name: 'Nick'}
+console.log(obj)
+//@ts-ignore
+console.log(obj.__proto__)*/
+
 
 //Task 01
 // Реализовать класс Animal который принимает name(по умолчанию 'Animal') в качестве параметра, у которого будет 3
