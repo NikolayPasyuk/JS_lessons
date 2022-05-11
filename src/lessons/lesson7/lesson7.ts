@@ -63,6 +63,20 @@ console.log(obj2)
 */
 
 
+/*class Test {
+    constructor(public name: string) {
+    }
+
+    getName() {
+        return this.name
+    }
+}
+
+let obj = new Test('Hi')
+const arrayPrototypeObj = Object.getPrototypeOf(obj)
+arrayPrototypeObj.setSomeProperty = function () {}
+let obj2 = new Test('Hello')
+console.log(obj2)*/
 
 
 //Task 01
