@@ -14,6 +14,13 @@ console.log('Lesson 7');
 // https://www.youtube.com/watch?v=b55hiUlhAzI
 
 
+// console.dir(function () {})
+// console.dir(Function)
+// console.dir(Object)
+// console.dir( () => {})
+// console.dir(class {})
+
+
 //Task 01
 // Реализовать класс Animal который принимает name(по умолчанию 'Animal') в качестве параметра, у которого будет 3
 // метода walk, eat, sleep - каждый метод должен выводить в консоль строку имя + действие. Пример:
@@ -42,4 +49,5 @@ console.log('Lesson 7');
 
 
 // just a plug
-export default () => {};
+export default () => {
+};

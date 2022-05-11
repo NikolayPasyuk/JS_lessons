@@ -8,13 +8,14 @@ import Lesson4 from './lessons/lesson4/Lesson4';
 import Lesson5 from './lessons/lesson5/lesson5';
 // import './lessons/lesson5/lesson5';
 import Lesson6 from './lessons/lesson6/lesson6';
+import Lesson7 from './lessons/lesson7/lesson7';
 // import './lessons/lesson7/lesson7';
 // import './lessons/lesson8/lesson8';
 
 function App() {
     return (
         <div className="container">
-            {Lesson6}
+            {Lesson7}
         </div>
     );
 }
