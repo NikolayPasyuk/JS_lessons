@@ -20,11 +20,8 @@ console.log('Lesson 7');
 // console.dir( () => {})
 // console.dir(class {})
 
-function f() {
-
-}
-
-console.log(typeof f.prototype)
+/*function f() {}
+console.log(typeof f.prototype)*/
 
 
 //Task 01
