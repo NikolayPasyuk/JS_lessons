@@ -20,6 +20,12 @@ console.log('Lesson 7');
 // console.dir( () => {})
 // console.dir(class {})
 
+function f() {
+
+}
+
+console.log(typeof f.prototype)
+
 
 //Task 01
 // Реализовать класс Animal который принимает name(по умолчанию 'Animal') в качестве параметра, у которого будет 3
