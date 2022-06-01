@@ -32,7 +32,7 @@ console.log(
 // Рекурсивно
 // В цикле
 
-const tree = {
+/*const tree = {
     valueNode: 3,
     next: [{
         valueNode: 1,
@@ -93,17 +93,22 @@ const getTreeSumWithLoop = (tree) => {
 }
 console.log(
     getTreeSum(tree)
-)
-
+)*/
 
 // Task 5
 // исправить код, что бы работал правильно
-
-for (var i = 0; i < 10; i++) {
+/*for (let i = 0; i < 10; i++) {
     setTimeout(function () {
         console.log(i);
-    }, 100);
+    }, 1000);
 }
+for (var i = 0; i < 10; i++) {
+    (function (j) {
+        setTimeout(() => {
+            console.log(j)
+        }, 1000)
+    })(i)
+}*/
 
 // Task 6
 // Реализуйте функцию Foo, что бы все корректно работало
