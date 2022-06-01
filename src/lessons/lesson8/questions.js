@@ -34,7 +34,29 @@ bar()*/
 //Task 3
 //Дана задача,что будет выведено  в консоль
 
+/*
 var foo = function bar() {
     return 1
 }
-console.log(typeof bar())
+console.log(typeof bar())*/
+
+//Task 4
+var a = 50;
+
+function f() {
+    a = 100
+    let b = 150
+}
+
+if (true) {
+    a = 175
+    let c = 200
+    var d = 300
+    const e = 400
+}
+f()
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(d)
+console.log(e)
