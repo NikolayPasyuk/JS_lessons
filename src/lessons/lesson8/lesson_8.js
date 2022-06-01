@@ -60,6 +60,19 @@ const tree = {
             ]
         }]
 };
+const getTreeSum = (tree) => {
+    let sum = tree.valueNode
+
+    if (tree.next) {
+        tree.next.forEach(subtree => {
+            sum += getTreeSum(subtree)
+        })
+    }
+    return sum
+}
+console.log(
+    getTreeSum(tree)
+)
 
 // Task 5
 // исправить код, что бы работал правильно
