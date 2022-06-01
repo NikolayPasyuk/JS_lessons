@@ -113,7 +113,7 @@ for (var i = 0; i < 10; i++) {
 // Task 6
 // Реализуйте функцию Foo, что бы все корректно работало
 
-function Book(name, author) {
+/*function Book(name, author) {
     this.name = name;
     this.author = author;
     return this;
@@ -124,10 +124,26 @@ function Foo(bookConstructor, name, author) {
 }
 
 const book = Foo(Book, 'js', 'petr');
-console.log(book.name);
+console.log(book.name);*/
 
 // Task 7
 // Реализовать функцию f: f(2, 3) -> 5, при вызове f(2)(3), тоже вернет 5
+
+const f = (a, b) => {
+    if (!b) {
+        return (c) => {
+            return a + c
+        }
+    } else {
+        return a + b
+    }
+}
+console.log(
+    f(2, 3)
+)
+console.log(
+    f(2)(3)
+)
 
 // Task 8
 // Реализовать функцию f: f(1)(2)(3)() -> 6, f(0)(3)(1)(5)() -> 8
