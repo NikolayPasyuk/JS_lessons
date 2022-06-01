@@ -129,7 +129,7 @@ console.log(book.name);*/
 // Task 7
 // Реализовать функцию f: f(2, 3) -> 5, при вызове f(2)(3), тоже вернет 5
 
-const f = (a, b) => {
+/*const f = (a, b) => {
     if (!b) {
         return (c) => {
             return a + c
@@ -143,10 +143,28 @@ console.log(
 )
 console.log(
     f(2)(3)
-)
+)*/
 
 // Task 8
-// Реализовать функцию f: f(1)(2)(3)() -> 6, f(0)(3)(1)(5)() -> 8
+// Реализовать функцию f: f(1)(2)(3)() -> 6, f()(3)(1)(5)() -> 9
+
+/*const f = (value = 0) => {
+    let outer = value
+
+    return (value) => {
+        if (!value) {
+            return outer
+        } else {
+            return f(outer + value)
+        }
+    }
+}
+console.log(
+    f(1)(2)(3)()
+)
+console.log(
+    f()(3)(1)(5)()
+)*/
 
 // Task 9
 // Реализовать функции seven, plus, one, five, minus, two так, что бы следующие вызовы работали seven(plus(one())) -> 8. five(minus(two())) -> 3
