@@ -81,6 +81,7 @@ f2()
 console.log(a)*/
 
 //Task 6
+/*
 {
     let c = 100
     var family = 'it-incubator'
@@ -98,4 +99,16 @@ if (!doc) {
 f()
 c()
 console.log(family)
-console.log(c)
+console.log(c)*/
+
+//Task 7
+let car1 = new Promise((_, reject) => setTimeout(reject, 2000, 'Car 1 crashed in'))
+let car2 = new Promise(resolve => setTimeout(resolve, 1500, 'Car 2 completed'))
+let car3 = new Promise(resolve => setTimeout(resolve, 3000, 'Car 3 completed'))
+
+Promise.race([car1, car2, car3])
+    .then(value => {
+        let result = `${value} the race.`
+        console.log(result)
+    })
+    .catch(err => console.log('Race  is cancelled.', err))
