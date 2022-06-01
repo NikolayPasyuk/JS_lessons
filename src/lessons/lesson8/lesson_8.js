@@ -74,6 +74,28 @@ console.log(
     getTreeSum(tree)
 )
 
+const getTreeSumWithLoop = (tree) => {
+    let sum = 0
+    let queue = [tree]
+
+    while (queue.length) {
+
+        let currentTree = queue.pop()
+        sum += currentTree.valueNode
+
+        if (currentTree.next) {
+            currentTree.next.forEach(subtree => {
+                queue.push(subtree)
+            })
+        }
+    }
+    return sum
+}
+console.log(
+    getTreeSum(tree)
+)
+
+
 // Task 5
 // исправить код, что бы работал правильно
 
