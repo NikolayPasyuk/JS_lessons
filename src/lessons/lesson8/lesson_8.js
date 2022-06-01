@@ -3,6 +3,7 @@
 
 // Task 2
 // Реализуйте необходимый код, что бы выражение (2).plus(3).minus(1) сработало и вернуло 4
+/*
 Number.prototype.plus = function (value) {
     return this.valueOf() + value
 }
@@ -12,9 +13,19 @@ Number.prototype.minus = function (value) {
 console.log(
     (2).plus(3).minus(1)
 )
+*/
 
 // Task 3
 // Реализуйте функцию, которая принимает следующие аргументы (строки) '*', '1', 'b', '1c', и возвращает строку '1*b*1c'
+/*
+function f() {
+    return Array.prototype.slice.call(arguments, 1).join(arguments[0])
+}
+
+console.log(
+    f('*', '1', 'b', '1c')
+)
+*/
 
 // Task 4
 // Напишите функцию которая найдет сумму всех вершин в структуре данны типа tree
