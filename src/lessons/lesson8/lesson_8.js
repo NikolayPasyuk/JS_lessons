@@ -166,6 +166,42 @@ console.log(
     f()(3)(1)(5)()
 )*/
 
+const f = (value = 0) => {
+    let outer = value
+
+    return (value) => {
+        if (!value) {
+            return outer
+        } else {
+            return f(outer + value)
+        }
+    }
+}
+console.log(
+    f(1)(2)(3)()
+)
+console.log(
+    f()(3)(1)(5)()
+)
+
+const f2 = (...args) => {
+    return x => {
+        console.log(args)
+        if (!x) {
+            return args.reduce((acc, a) => {
+                return acc + a
+            }, 0)
+        }
+        return f(...args, x)
+    }
+}
+console.log(
+    f()()
+)
+console.log(
+    f()(5)(1)(3)(7)()
+)
+
 // Task 9
 // Реализовать функции seven, plus, one, five, minus, two так, что бы следующие вызовы работали seven(plus(one())) -> 8. five(minus(two())) -> 3
 
