@@ -41,6 +41,7 @@ var foo = function bar() {
 console.log(typeof bar())*/
 
 //Task 4
+/*
 var a = 50;
 
 function f() {
@@ -59,4 +60,21 @@ console.log(a)
 console.log(b)
 console.log(c)
 console.log(d)
-console.log(e)
+console.log(e)*/
+
+//Task 5
+let a = 5
+{
+    a = 10
+}
+console.log(a)
+
+function f2() {
+    console.log(a)
+    a = 20
+    var b = 20
+}
+
+console.log(b)
+f2()
+console.log(a)
