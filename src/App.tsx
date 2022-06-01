@@ -10,12 +10,12 @@ import Lesson5 from './lessons/lesson5/lesson5';
 import Lesson6 from './lessons/lesson6/lesson6';
 import Lesson7 from './lessons/lesson7/lesson7';
 // import './lessons/lesson7/lesson7';
-// import './lessons/lesson8/lesson8';
+import Lesson8 from './lessons/lesson8/lesson8';
 
 function App() {
     return (
         <div className="container">
-            {Lesson7}
+            {Lesson8}
         </div>
     );
 }
