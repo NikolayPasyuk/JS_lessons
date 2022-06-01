@@ -1,18 +1,5 @@
 console.log('Lesson 7');
 
-// __Proto__
-// https://learn.javascript.ru/prototype-inheritance
-// https://habr.com/ru/post/518360/
-// https://learn.javascript.ru/native-prototypes
-
-// Prototype
-// https://learn.javascript.ru/function-prototype
-// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
-
-
-// https://www.youtube.com/watch?v=aQkgUUmUJy4&t=21s
-// https://www.youtube.com/watch?v=b55hiUlhAzI
-
 
 // console.dir(function () {})
 // console.dir(Function)
