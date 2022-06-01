@@ -1,3 +1,4 @@
+//Task 1
 //Дана задача,что будет выведено  в консоль
 /*
 const square = {
@@ -11,7 +12,9 @@ const square = {
 console.log(square.area())
 console.log(square.perimeter())*/
 
+//Task 2
 //Дана задача,что пройзойдет при вызове функции
+/*
 var a = 15;
 
 function foo() {
@@ -26,4 +29,12 @@ function foo() {
 }
 
 var bar = foo().bind({a: 45})
-bar()
+bar()*/
+
+//Task 3
+//Дана задача,что будет выведено  в консоль
+
+var foo = function bar() {
+    return 1
+}
+console.log(typeof bar())
