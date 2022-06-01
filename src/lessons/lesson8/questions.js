@@ -63,6 +63,7 @@ console.log(d)
 console.log(e)*/
 
 //Task 5
+/*
 let a = 5
 {
     a = 10
@@ -77,4 +78,24 @@ function f2() {
 
 console.log(b)
 f2()
-console.log(a)
+console.log(a)*/
+
+//Task 6
+{
+    let c = 100
+    var family = 'it-incubator'
+
+    function f() {
+        console.log(c)
+    }
+}
+let doc = false
+if (!doc) {
+    function c() {
+        console.log(family)
+    }
+}
+f()
+c()
+console.log(family)
+console.log(c)
