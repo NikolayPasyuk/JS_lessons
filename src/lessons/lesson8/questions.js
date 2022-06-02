@@ -252,7 +252,14 @@ const result = ratings.reduce((start, next, index, array) =>
 console.log(result)*/
 
 //Task 21
+/*
 const priority = [, ,];
 for (const item of priority) {
     console.log(item)
-}
+}*/
+
+//Task 22
+const entries = ['a', 'b', 'c'];
+const newEntries =
+    entries.concat(['d', 'e', 'f'], 'g', 'h')
+console.log(newEntries.length)
