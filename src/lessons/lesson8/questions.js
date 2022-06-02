@@ -188,9 +188,21 @@ console.log(first)
 console.log(second)*/
 
 //Task 14
+/*
 setTimeout(() => console.log(1), 0)
 console.log(2)
 new Promise((resolve, reject) => {
     setTimeout(() => reject(console.log(3)), 1000);
 }).catch(() => console.log(4))
-console.log(5)
+console.log(5)*/
+
+//Task 15
+/*
+let data = new Date(2020, 05, 10);
+let dateDusplayOptions = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+};
+let formattedDate = data.toLocaleDateString('en', dateDusplayOptions)
+console.log(formattedDate)*/
