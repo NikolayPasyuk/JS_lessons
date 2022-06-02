@@ -169,6 +169,7 @@ Monster.prototype.growl = () => console.log('Grr!');
 console.log(new Monster().growl === new Monster().growl)*/
 
 //Task 13
+/*
 let first = 'Who';
 let second = 'What';
 try {
@@ -184,4 +185,12 @@ try {
     second = 'Where'
 }
 console.log(first)
-console.log(second)
+console.log(second)*/
+
+//Task 14
+setTimeout(() => console.log(1), 0)
+console.log(2)
+new Promise((resolve, reject) => {
+    setTimeout(() => reject(console.log(3)), 1000);
+}).catch(() => console.log(4))
+console.log(5)
