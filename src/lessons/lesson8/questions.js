@@ -208,10 +208,25 @@ let formattedDate = data.toLocaleDateString('en', dateDusplayOptions)
 console.log(formattedDate)*/
 
 //Task 16
+/*
 let objBook = {title: 'JavaScript',}
 Object.preventExtensions(objBook);
 let newObjBook = objBook;
 newObjBook.author = 'Robert';
 
 console.log(objBook);
-console.log(newObjBook)
+console.log(newObjBook)*/
+
+//Task 17
+function getAvaliabilityMessage(item) {
+    if (getAvaliability(item)) {
+        var msg = 'Username avaliable'
+    }
+    return msg
+}
+
+function getAvaliability(name) {
+    return name === 'Eugene';
+}
+
+console.log('getAvaliabilityMessage ', getAvaliabilityMessage('newUserName'))
