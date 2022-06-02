@@ -266,6 +266,7 @@ const newEntries =
 console.log(newEntries.length)*/
 
 //Task 23
+/*
 class Task {
     constructor() {
         console.log(new.target.name)
@@ -275,4 +276,19 @@ class Task {
 class UrgentTask extends Task {
 }
 
-let task = new UrgentTask()
+let task = new UrgentTask()*/
+
+//Task 24
+class Task {
+    constructor(id = 2) {
+        console.log('Constructing Task')
+        this.taskId = id
+    }
+
+    showId() {
+        console.log(this.taskId)
+    }
+}
+
+let task = new Task()
+task.showId()
