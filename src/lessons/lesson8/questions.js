@@ -206,3 +206,12 @@ let dateDusplayOptions = {
 };
 let formattedDate = data.toLocaleDateString('en', dateDusplayOptions)
 console.log(formattedDate)*/
+
+//Task 16
+let objBook = {title: 'JavaScript',}
+Object.preventExtensions(objBook);
+let newObjBook = objBook;
+newObjBook.author = 'Robert';
+
+console.log(objBook);
+console.log(newObjBook)
