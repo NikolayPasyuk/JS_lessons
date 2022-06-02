@@ -218,6 +218,7 @@ console.log(objBook);
 console.log(newObjBook)*/
 
 //Task 17
+/*
 function getAvaliabilityMessage(item) {
     if (getAvaliability(item)) {
         var msg = 'Username avaliable'
@@ -229,4 +230,10 @@ function getAvaliability(name) {
     return name === 'Eugene';
 }
 
-console.log('getAvaliabilityMessage ', getAvaliabilityMessage('newUserName'))
+console.log('getAvaliabilityMessage ', getAvaliabilityMessage('newUserName'))*/
+
+//Task 18
+const entries = [];
+entries.push('a');
+entries.push('b', 'c');
+console.log(entries.pop())
