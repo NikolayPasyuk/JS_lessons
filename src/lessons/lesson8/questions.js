@@ -121,9 +121,32 @@ Promise.resolve('Success').then(console.log)
 console.log('End')*/
 
 //Task 9
+/*
 setCurrentUrl();
 console.log('The current URL is: ' + url);
 
 function setCurrentUrl() {
     url = window.location.href;
+}*/
+
+//Task 10
+//Какие ключи будут заполнены у pet1
+function Animal(size, type) {
+    this.type = type || 'Animal'
+    this.canTalk = false
 }
+
+Animal.prototype.speak = function () {
+    if (this.canTalk) {
+        console.log('It spoke')
+    }
+}
+let Pet = function (size, type, name, owner) {
+    Animal.call(this, size, type);
+    this.size = size;
+    this.name = name;
+    this.owner = owner;
+}
+Pet.prototype = Object.create(Animal.prototype);
+let pet1 = new Pet();
+console.log(pet1)
