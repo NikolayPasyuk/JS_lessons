@@ -233,7 +233,12 @@ function getAvaliability(name) {
 console.log('getAvaliabilityMessage ', getAvaliabilityMessage('newUserName'))*/
 
 //Task 18
+/*
 const entries = [];
 entries.push('a');
 entries.push('b', 'c');
-console.log(entries.pop())
+console.log(entries.pop())*/
+
+//Task 19
+const entries = ['a', 1, true]
+console.log(entries instanceof Array)
