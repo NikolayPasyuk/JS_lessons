@@ -161,8 +161,27 @@ for (let i = 0; i < array.length; i++) {
 console.log(array)*/
 
 //Task 12
+/*
 function Monster() {
 }
 
 Monster.prototype.growl = () => console.log('Grr!');
-console.log(new Monster().growl === new Monster().growl)
+console.log(new Monster().growl === new Monster().growl)*/
+
+//Task 13
+let first = 'Who';
+let second = 'What';
+try {
+    try {
+        throw new Error('Sad trombone')
+    } catch (err) {
+        first = 'Why';
+        throw err
+    } finally {
+        second = 'When'
+    }
+} catch (err) {
+    second = 'Where'
+}
+console.log(first)
+console.log(second)
