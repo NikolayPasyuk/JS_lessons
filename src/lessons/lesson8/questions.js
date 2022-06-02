@@ -279,6 +279,7 @@ class UrgentTask extends Task {
 let task = new UrgentTask()*/
 
 //Task 24
+/*
 class Task {
     constructor(id = 2) {
         console.log('Constructing Task')
@@ -291,4 +292,21 @@ class Task {
 }
 
 let task = new Task()
-task.showId()
+task.showId()*/
+
+//Task 25
+/*class Task {
+    constructor(id = 2) {
+        console.log('Constructing Task')
+    }
+}
+
+class UrgentTask extends Task {
+    constructor() {
+        this.action = 'Urgent Task'
+        super();
+        console.log(this.action)
+    }
+}
+
+let task = new UrgentTask()*/
