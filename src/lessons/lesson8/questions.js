@@ -115,6 +115,15 @@ Promise.race([car1, car2, car3])
     .catch(err => console.log('Race  is cancelled.', err))*/
 
 //Task 8
+/*
 console.log('Start')
 Promise.resolve('Success').then(console.log)
-console.log('End')
+console.log('End')*/
+
+//Task 9
+setCurrentUrl();
+console.log('The current URL is: ' + url);
+
+function setCurrentUrl() {
+    url = window.location.href;
+}
