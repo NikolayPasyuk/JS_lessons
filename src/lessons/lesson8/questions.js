@@ -240,5 +240,12 @@ entries.push('b', 'c');
 console.log(entries.pop())*/
 
 //Task 19
+/*
 const entries = ['a', 1, true]
-console.log(entries instanceof Array)
+console.log(entries instanceof Array)*/
+
+//Task 20
+const ratings = [1, 2, 3, 4, 5]
+const result = ratings.reduce((start, next, index, array) =>
+    start * next)
+console.log(result)
