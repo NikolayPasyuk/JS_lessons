@@ -131,7 +131,7 @@ function setCurrentUrl() {
 
 //Task 10
 //Какие ключи будут заполнены у pet1
-function Animal(size, type) {
+/*function Animal(size, type) {
     this.type = type || 'Animal'
     this.canTalk = false
 }
@@ -149,4 +149,13 @@ let Pet = function (size, type, name, owner) {
 }
 Pet.prototype = Object.create(Animal.prototype);
 let pet1 = new Pet();
-console.log(pet1)
+console.log(pet1)*/
+
+//Task 11
+let array = [1, 2, 3, 4, 4, 5, 4, 4]
+for (let i = 0; i < array.length; i++) {
+    if (array[i] === 4) {
+        array.splice(i, 1)
+    }
+}
+console.log(array)
