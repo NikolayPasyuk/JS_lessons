@@ -102,6 +102,7 @@ console.log(family)
 console.log(c)*/
 
 //Task 7
+/*
 let car1 = new Promise((_, reject) => setTimeout(reject, 2000, 'Car 1 crashed in'))
 let car2 = new Promise(resolve => setTimeout(resolve, 1500, 'Car 2 completed'))
 let car3 = new Promise(resolve => setTimeout(resolve, 3000, 'Car 3 completed'))
@@ -111,4 +112,9 @@ Promise.race([car1, car2, car3])
         let result = `${value} the race.`
         console.log(result)
     })
-    .catch(err => console.log('Race  is cancelled.', err))
+    .catch(err => console.log('Race  is cancelled.', err))*/
+
+//Task 8
+console.log('Start')
+Promise.resolve('Success').then(console.log)
+console.log('End')
