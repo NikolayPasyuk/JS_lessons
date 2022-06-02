@@ -152,10 +152,17 @@ let pet1 = new Pet();
 console.log(pet1)*/
 
 //Task 11
-let array = [1, 2, 3, 4, 4, 5, 4, 4]
+/*let array = [1, 2, 3, 4, 4, 5, 4, 4]
 for (let i = 0; i < array.length; i++) {
     if (array[i] === 4) {
         array.splice(i, 1)
     }
 }
-console.log(array)
+console.log(array)*/
+
+//Task 12
+function Monster() {
+}
+
+Monster.prototype.growl = () => console.log('Grr!');
+console.log(new Monster().growl === new Monster().growl)
