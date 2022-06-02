@@ -259,7 +259,20 @@ for (const item of priority) {
 }*/
 
 //Task 22
+/*
 const entries = ['a', 'b', 'c'];
 const newEntries =
     entries.concat(['d', 'e', 'f'], 'g', 'h')
-console.log(newEntries.length)
+console.log(newEntries.length)*/
+
+//Task 23
+class Task {
+    constructor() {
+        console.log(new.target.name)
+    }
+}
+
+class UrgentTask extends Task {
+}
+
+let task = new UrgentTask()
