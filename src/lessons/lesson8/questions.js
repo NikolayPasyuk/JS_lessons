@@ -245,7 +245,14 @@ const entries = ['a', 1, true]
 console.log(entries instanceof Array)*/
 
 //Task 20
+/*
 const ratings = [1, 2, 3, 4, 5]
 const result = ratings.reduce((start, next, index, array) =>
     start * next)
-console.log(result)
+console.log(result)*/
+
+//Task 21
+const priority = [, ,];
+for (const item of priority) {
+    console.log(item)
+}
