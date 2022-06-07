@@ -80,9 +80,25 @@ console.log(
 )*/
 
 //Task 6
+/*
 function User() {
 }
 
 User.prototype = {}
 const user = new User.prototype.constructor()
-console.log(user.constructor === User)
+console.log(user.constructor === User)*/
+
+//Task 7
+function Rabbit() {
+}
+
+const whiteRabbit = new Rabbit()
+Rabbit.prototype = {
+    jumps: true
+}
+const blackRabbit = new whiteRabbit.constructor()
+console.log(whiteRabbit.constructor === Rabbit)
+console.log(whiteRabbit.jumps)
+
+console.log(blackRabbit.jumps)
+console.log(blackRabbit.constructor === Rabbit)
