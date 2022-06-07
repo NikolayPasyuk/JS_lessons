@@ -55,6 +55,7 @@ console.log(
 )*/
 
 //Task 4
+/*
 const user = {
     sleep() {
         this.isSleeping = true
@@ -62,4 +63,17 @@ const user = {
 }
 const john = Object.create(user)
 john.sleep()
-console.log(john.isSleeping)
+console.log(john.isSleeping)*/
+
+//Task 5
+console.log(
+    [].__proto__.__proto__ === null
+)
+console.log(
+    (() => {
+    }).__proto__.__proto__ === Object.prototype
+)
+console.log(
+    Object.__proto__ === (() => {
+    }).__proto__
+)
