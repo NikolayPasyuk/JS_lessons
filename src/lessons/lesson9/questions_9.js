@@ -89,6 +89,7 @@ const user = new User.prototype.constructor()
 console.log(user.constructor === User)*/
 
 //Task 7
+/*
 function Rabbit() {
 }
 
@@ -101,4 +102,25 @@ console.log(whiteRabbit.constructor === Rabbit)
 console.log(whiteRabbit.jumps)
 
 console.log(blackRabbit.jumps)
-console.log(blackRabbit.constructor === Rabbit)
+console.log(blackRabbit.constructor === Rabbit)*/
+
+//Task 8
+setTimeout(() => {
+    console.log('1')
+}, 30)
+setTimeout(() => {
+    console.log('2')
+}, 20)
+setTimeout(() => {
+    console.log('3')
+}, 10)
+const p = new Promise((res) => {
+    console.log('4')
+    setTimeout(() => {
+        res('5')
+    }, 50)
+})
+p.then(res => console.log(res))
+Promise
+    .resolve('6')
+    .then(res => console.log(res))
