@@ -26,7 +26,8 @@ console.log(
     b(3)
 )*/
 //Task 3
-const callCount = (fn) => {
+/*
+/!*const callCount = (fn) => {
     let count = 0;
 
     return [
@@ -42,7 +43,7 @@ const callCount = (fn) => {
 
 const sum = (a, b) => {
     return a + b
-}
+}*!/
 
 const [addCount, getCount] = callCount(sum)
 
@@ -51,4 +52,14 @@ addCount(1, 3)
 addCount(2, 5)
 console.log(
     getCount()
-)
+)*/
+
+//Task 4
+const user = {
+    sleep() {
+        this.isSleeping = true
+    }
+}
+const john = Object.create(user)
+john.sleep()
+console.log(john.isSleeping)
