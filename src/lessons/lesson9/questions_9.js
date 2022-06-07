@@ -105,7 +105,7 @@ console.log(blackRabbit.jumps)
 console.log(blackRabbit.constructor === Rabbit)*/
 
 //Task 8
-setTimeout(() => {
+/*setTimeout(() => {
     console.log('1')
 }, 30)
 setTimeout(() => {
@@ -123,4 +123,32 @@ const p = new Promise((res) => {
 p.then(res => console.log(res))
 Promise
     .resolve('6')
-    .then(res => console.log(res))
+    .then(res => console.log(res))*/
+
+//Task 9
+class A {
+    constructor(name) {
+        this.name = name
+    }
+}
+
+class B {
+    constructor(name) {
+        this.name = name
+        return 'D'
+    }
+}
+
+class C {
+    constructor(name) {
+        this.name = name
+        return {a: 1, b: 2, c: 3}
+    }
+}
+
+const a = new A('A')
+const b = new B('B')
+const c = new C('C')
+console.log(a.name)
+console.log(b.name)
+console.log(c.name)
