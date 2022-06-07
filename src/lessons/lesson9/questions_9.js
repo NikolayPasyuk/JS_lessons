@@ -66,6 +66,7 @@ john.sleep()
 console.log(john.isSleeping)*/
 
 //Task 5
+/*
 console.log(
     [].__proto__.__proto__ === null
 )
@@ -76,4 +77,12 @@ console.log(
 console.log(
     Object.__proto__ === (() => {
     }).__proto__
-)
+)*/
+
+//Task 6
+function User() {
+}
+
+User.prototype = {}
+const user = new User.prototype.constructor()
+console.log(user.constructor === User)
