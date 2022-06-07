@@ -126,6 +126,7 @@ Promise
     .then(res => console.log(res))*/
 
 //Task 9
+/*
 class A {
     constructor(name) {
         this.name = name
@@ -151,4 +152,37 @@ const b = new B('B')
 const c = new C('C')
 console.log(a.name)
 console.log(b.name)
-console.log(c.name)
+console.log(c.name)*/
+
+//Task 10
+class Car {
+    name = 'car'
+}
+
+class User {
+    name = 'user'
+}
+
+class Road {
+    name = 'road'
+}
+
+const aggregate = (classes) => {
+
+    const res = {}
+    Object.defineProperty(res, 'showName', {
+        value: function () {
+            console.log(this.name)
+        },
+        enumerable: false
+    })
+    for (let i = 0; i < classes.length; i++) {
+        const instance = new classes[i]
+        res[instance.name] = instance
+    }
+    return res
+}
+const a = aggregate([Car, User, Road])
+Object
+    .values(a)
+    .forEach(v => a.showName.call(v))
