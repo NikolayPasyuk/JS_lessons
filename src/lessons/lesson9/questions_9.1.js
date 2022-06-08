@@ -30,3 +30,16 @@ b.name = 'new b'
 console.log(a.name)
 console.log(b.name)
 console.log(c.name)*/
+
+//Task 14
+const b = {
+    name: 'b',
+    getName: function () {
+        return (() => this.name)()
+    }
+}
+const c = {
+    name: 'c'
+}
+Object.setPrototypeOf(c, b)
+console.log(c.getName())
