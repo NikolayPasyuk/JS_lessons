@@ -143,6 +143,7 @@ a[b] = 'b'
 console.log(a)*/
 
 //Task 22
+/*
 const a = {}
 const b = {
     toString() {
@@ -151,4 +152,11 @@ const b = {
 }
 
 a[b] = 'b'
-console.log(a)
+console.log(a)*/
+
+//Task 23
+(() => {
+    let a = b = 42
+})()
+console.log(typeof a === 'undefined')
+console.log(typeof b === 'undefined')
