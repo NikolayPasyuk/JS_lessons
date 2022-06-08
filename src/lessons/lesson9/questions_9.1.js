@@ -81,6 +81,7 @@ Object.setPrototypeOf(b, {})
 b.showName()*/
 
 //Task 17
+/*
 const arr = []
 console.log(arr.constructor === Array)
 
@@ -89,4 +90,12 @@ const a = () => {
 console.log(a.__proto__.__proto__.constructor === Object)
 
 arr.__proto__ = []
-console.log(arr.__proto__.__proto__ === Object.prototype)
+console.log(arr.__proto__.__proto__ === Object.prototype)*/
+
+//Task 18
+let i;
+for (i = 0; i < 10; i++) {
+    setTimeout(() => {
+        console.log(i)
+    }, 0)
+}
