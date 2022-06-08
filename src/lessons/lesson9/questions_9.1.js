@@ -155,8 +155,18 @@ a[b] = 'b'
 console.log(a)*/
 
 //Task 23
+/*
 (() => {
     let a = b = 42
 })()
 console.log(typeof a === 'undefined')
-console.log(typeof b === 'undefined')
+console.log(typeof b === 'undefined')*/
+
+//Task 24
+const a = {
+    name: 'a',
+    logName() {
+        console.log(this.name)
+    }
+}
+setTimeout(a.logName, 100)
