@@ -135,8 +135,20 @@ console.log(null == null)
 console.log(undefined == undefined)*/
 
 //Task 21
+/*
 const a = {}
 const b = {}
+
+a[b] = 'b'
+console.log(a)*/
+
+//Task 22
+const a = {}
+const b = {
+    toString() {
+        return 'key of b'
+    }
+}
 
 a[b] = 'b'
 console.log(a)
