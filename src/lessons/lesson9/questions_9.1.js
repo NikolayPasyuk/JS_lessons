@@ -190,6 +190,7 @@ console.log(a.getIsMale())
 console.log(a.getAge())*/
 
 //Task 26
+/*
 Object.prototype.getName = function () {
     return this.name
 }
@@ -206,4 +207,21 @@ console.log(
     a.getName
         .bind(c)
         .call(b)
-)
+)*/
+
+//Task 27
+function User(name) {
+    this.name = name
+    return 'User'
+}
+
+function Car(engine) {
+    this.engine = engine
+    return {}
+}
+
+const user = new User('Alex')
+const car = new Car('v8')
+
+console.log(user.name)
+console.log(car.engine)
