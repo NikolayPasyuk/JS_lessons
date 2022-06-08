@@ -155,6 +155,7 @@ console.log(b.name)
 console.log(c.name)*/
 
 //Task 10
+/*
 class Car {
     name = 'car'
 }
@@ -185,4 +186,4 @@ const aggregate = (classes) => {
 const a = aggregate([Car, User, Road])
 Object
     .values(a)
-    .forEach(v => a.showName.call(v))
+    .forEach(v => a.showName.call(v))*/
