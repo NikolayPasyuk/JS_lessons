@@ -173,6 +173,7 @@ const a = {
 setTimeout(a.logName, 100)*/
 
 //Task 25
+/*
 const a = {
     isMale: true,
     age: 23,
@@ -186,4 +187,23 @@ const a = {
     }
 }
 console.log(a.getIsMale())
-console.log(a.getAge())
+console.log(a.getAge())*/
+
+//Task 26
+Object.prototype.getName = function () {
+    return this.name
+}
+const a = {name: 'a'}
+const b = {name: 'b'}
+const c = {name: 'c'}
+
+console.log(
+    a.getName
+        .bind(b)
+        .bind(c)()
+)
+console.log(
+    a.getName
+        .bind(c)
+        .call(b)
+)
