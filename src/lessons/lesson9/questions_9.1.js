@@ -32,6 +32,7 @@ console.log(b.name)
 console.log(c.name)*/
 
 //Task 14
+/*
 const b = {
     name: 'b',
     getName: function () {
@@ -42,4 +43,22 @@ const c = {
     name: 'c'
 }
 Object.setPrototypeOf(c, b)
-console.log(c.getName())
+console.log(c.getName())*/
+
+//Task 15
+const a = {
+    age: 25
+}
+const b = {
+    age: 23,
+    hi: () => {
+        console.log(this.age)
+    },
+    hi2() {
+        (() => {
+            console.log(this.age)
+        }).call(a)
+    }
+}
+b.hi()
+b.hi2()
