@@ -123,6 +123,7 @@ setTimeout(() => {
 console.log('d')
 */
 //Task 20
+/*
 console.log('6' / '2')
 console.log('6' * '2')
 console.log('6' + '2')
@@ -131,4 +132,11 @@ console.log('6' - '2')
 console.log('2' + true)
 console.log(null == undefined)
 console.log(null == null)
-console.log(undefined == undefined)
+console.log(undefined == undefined)*/
+
+//Task 21
+const a = {}
+const b = {}
+
+a[b] = 'b'
+console.log(a)
