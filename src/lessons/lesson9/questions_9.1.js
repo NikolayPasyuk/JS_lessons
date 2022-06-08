@@ -102,6 +102,7 @@ for (i = 0; i < 10; i++) {
 }*/
 
 //Task 19
+/*
 console.log('a')
 console.log('b')
 
@@ -120,3 +121,14 @@ setTimeout(() => {
     console.log('timer 0')
 }, 0)
 console.log('d')
+*/
+//Task 20
+console.log('6' / '2')
+console.log('6' * '2')
+console.log('6' + '2')
+console.log('6' + 2)
+console.log('6' - '2')
+console.log('2' + true)
+console.log(null == undefined)
+console.log(null == null)
+console.log(undefined == undefined)
