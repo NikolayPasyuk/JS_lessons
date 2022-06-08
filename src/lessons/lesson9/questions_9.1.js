@@ -93,9 +93,30 @@ arr.__proto__ = []
 console.log(arr.__proto__.__proto__ === Object.prototype)*/
 
 //Task 18
+/*
 let i;
 for (i = 0; i < 10; i++) {
     setTimeout(() => {
         console.log(i)
     }, 0)
-}
+}*/
+
+//Task 19
+console.log('a')
+console.log('b')
+
+setTimeout(() => {
+    console.log('timer 10')
+}, 10)
+
+setTimeout(() => {
+    console.log('timer 20')
+}, 20)
+Promise.resolve('Promise 1').then((res) => console.log(res))
+Promise.resolve(setTimeout(() => (console.log('Promise 2')), 5))
+Promise.resolve('Promise 3').then(console.log)
+
+setTimeout(() => {
+    console.log('timer 0')
+}, 0)
+console.log('d')
