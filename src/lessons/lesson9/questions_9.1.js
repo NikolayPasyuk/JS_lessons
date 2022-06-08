@@ -46,6 +46,7 @@ Object.setPrototypeOf(c, b)
 console.log(c.getName())*/
 
 //Task 15
+/*
 const a = {
     age: 25
 }
@@ -61,4 +62,19 @@ const b = {
     }
 }
 b.hi()
-b.hi2()
+b.hi2()*/
+
+//Task 16
+Object.prototype.name = 'Object'
+
+Object.prototype.showName = function () {
+    console.log(this.name)
+}
+const a = {
+    name: 'a'
+}
+const b = Object.create(a)
+b.showName()
+
+Object.setPrototypeOf(b, {})
+b.showName()
