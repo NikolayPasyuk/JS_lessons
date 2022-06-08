@@ -65,6 +65,7 @@ b.hi()
 b.hi2()*/
 
 //Task 16
+/*
 Object.prototype.name = 'Object'
 
 Object.prototype.showName = function () {
@@ -77,4 +78,15 @@ const b = Object.create(a)
 b.showName()
 
 Object.setPrototypeOf(b, {})
-b.showName()
+b.showName()*/
+
+//Task 17
+const arr = []
+console.log(arr.constructor === Array)
+
+const a = () => {
+}
+console.log(a.__proto__.__proto__.constructor === Object)
+
+arr.__proto__ = []
+console.log(arr.__proto__.__proto__ === Object.prototype)
