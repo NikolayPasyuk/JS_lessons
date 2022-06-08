@@ -163,10 +163,27 @@ console.log(typeof a === 'undefined')
 console.log(typeof b === 'undefined')*/
 
 //Task 24
+/*
 const a = {
     name: 'a',
     logName() {
         console.log(this.name)
     }
 }
-setTimeout(a.logName, 100)
+setTimeout(a.logName, 100)*/
+
+//Task 25
+const a = {
+    isMale: true,
+    age: 23,
+
+    getIsMale: () => {
+        return this.isMale
+    },
+    getAge: function () {
+        const age = 24
+        return this.age
+    }
+}
+console.log(a.getIsMale())
+console.log(a.getAge())
