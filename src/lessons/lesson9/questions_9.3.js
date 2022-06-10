@@ -54,6 +54,7 @@ for (var i = 0; i < 10; i++) {
 
 //Task 43
 
+/*
 const test = {
     prefix: '_',
     tests: ['1', '2', '3'],
@@ -64,4 +65,19 @@ const test = {
     }
 }
 test.addPrefixToTest()
-console.log(test.tests)
+console.log(test.tests)*/
+
+
+//Task 44
+
+function User(name) {
+    this.name = name
+}
+
+const user = new User('Alex')
+console.log(user.isActive)
+
+User.prototype = {
+    isActive: true
+}
+console.log(user.isActive)
