@@ -47,6 +47,7 @@ res.a(2)*/
 
 //Task 32
 
+/*
 const user = {
 
     _data: {
@@ -63,4 +64,33 @@ const user = {
         return this._methods._getName.call(this._data)
     }
 }
-console.log(user.getName())
+console.log(user.getName())*/
+
+
+//Task 33
+
+/*
+const getCatCreator = () => (
+    class Cat {
+        constructor(name) {
+            this.name = name
+        }
+    }
+)
+const cat = new (getCatCreator())('Cat name!')
+console.log(cat)*/
+
+
+//Task 33
+
+let animal = {
+    eats: true
+}
+
+function Rabbit(name) {
+    this.name = name
+}
+
+let rabbit = new Rabbit('White Rabbit')
+Rabbit.prototype = animal
+console.log(rabbit.eats)
