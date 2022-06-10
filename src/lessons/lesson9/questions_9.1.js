@@ -228,6 +228,7 @@ console.log(user.name)
 console.log(car.engine)*/
 
 //Task 28
+/*
 const watchBalanceWithLog = function (cb) {
     let count = 0;
     return function () {
@@ -246,4 +247,4 @@ const wallet = {
 wallet.watchBalance = watchBalanceWithLog(wallet.watchBalance)
 wallet.watchBalance()//-> 1000USD /n Balance was watched 1 times
 wallet.watchBalance()//-> 1000USD /n Balance was watched 2 times
-wallet.watchBalance()//-> 1000USD /n Balance was watched 3 times
+wallet.watchBalance()//-> 1000USD /n Balance was watched 3 times*/
