@@ -102,6 +102,7 @@ console.log(user.constructor === User)*/
 
 //Task 46
 
+/*
 new Promise(() => {
     setTimeout(() => {
         return 'Hello'
@@ -109,4 +110,16 @@ new Promise(() => {
 })
     .then(res => `${res} World`)
     .then(res => `${res} |`)
-    .then(console.log)
+    .then(console.log)*/
+
+
+//Task 47
+
+let a = 5
+
+Number.prototype.addOne = function () {
+    const old = this.valueOf()
+    return old + 1
+}
+a = a.addOne()
+console.log(a)
