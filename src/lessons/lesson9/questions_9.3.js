@@ -20,6 +20,7 @@ console.log(a + '')*/
 
 //Task 40
 
+/*
 console.log(a)
 {
     var a = 6
@@ -27,4 +28,14 @@ console.log(a)
 {
     let b = 6
 }
-console.log(b)
+console.log(b)*/
+
+
+//Task 41
+
+test()
+{
+    function test() {
+        console.log('test')
+    }
+}
