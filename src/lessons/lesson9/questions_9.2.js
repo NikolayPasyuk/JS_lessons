@@ -110,9 +110,27 @@ console.log(rabbit.__proto__ === rabbit2.__proto__)*/
 
 //Task 35
 
+/*
 function Rabbit() {
 }
 
 Rabbit.prototype = {jumps: true}
 let rabbit = new Rabbit()
-console.log(rabbit.constructor === Rabbit)
+console.log(rabbit.constructor === Rabbit)*/
+
+
+//Task 36
+
+const a = {
+    toString() {
+        return 'key of a'
+    },
+    b: {
+        name: 'b'
+    }
+}
+
+const c = {}
+c[a] = 'a'
+c[a.b] = a.b.name
+console.log(c)
