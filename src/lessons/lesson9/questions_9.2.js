@@ -121,6 +121,7 @@ console.log(rabbit.constructor === Rabbit)*/
 
 //Task 36
 
+/*
 const a = {
     toString() {
         return 'key of a'
@@ -133,4 +134,26 @@ const a = {
 const c = {}
 c[a] = 'a'
 c[a.b] = a.b.name
-console.log(c)
+console.log(c)*/
+
+
+//Task 37
+
+String.prototype.add = function (str) {
+    return this + str
+}
+
+const arr = [1, 2, 3]
+
+console.log(
+    arr
+        .join('a')
+        .replaceAll('a', '0')
+        .add('0')
+        .split(',')
+        .map(n => +n)
+        .reduce((acc, n) => {
+            acc[n] = n
+            return acc
+        }, {})
+)
