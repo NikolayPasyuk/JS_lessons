@@ -98,6 +98,7 @@ console.log(rabbit.eats)*/
 
 //Task 34
 
+/*
 function Rabbit(name) {
     this.name = name
 }
@@ -105,4 +106,13 @@ function Rabbit(name) {
 let rabbit = new Rabbit('White Rabbit')
 let rabbit2 = new rabbit.constructor('Black Rabbit')
 
-console.log(rabbit.__proto__ === rabbit2.__proto__)
+console.log(rabbit.__proto__ === rabbit2.__proto__)*/
+
+//Task 35
+
+function Rabbit() {
+}
+
+Rabbit.prototype = {jumps: true}
+let rabbit = new Rabbit()
+console.log(rabbit.constructor === Rabbit)
