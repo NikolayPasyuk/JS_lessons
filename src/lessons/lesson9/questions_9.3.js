@@ -86,6 +86,7 @@ console.log(user.isActive)*/
 
 //Task 45
 
+/*
 function User(name) {
     this.name = name
 }
@@ -96,4 +97,16 @@ console.log(user.constructor === User)
 User.prototype = {
     isActive: true
 }
-console.log(user.constructor === User)
+console.log(user.constructor === User)*/
+
+
+//Task 46
+
+new Promise(() => {
+    setTimeout(() => {
+        return 'Hello'
+    }, 1000)
+})
+    .then(res => `${res} World`)
+    .then(res => `${res} |`)
+    .then(console.log)
