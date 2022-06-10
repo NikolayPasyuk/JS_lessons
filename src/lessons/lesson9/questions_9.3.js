@@ -33,9 +33,19 @@ console.log(b)*/
 
 //Task 41
 
+/*
 test()
 {
     function test() {
         console.log('test')
     }
+}*/
+
+
+//Task 42
+
+for (var i = 0; i < 10; i++) {
+    (function (j) {
+        setTimeout(() => console.log(j), 10)
+    })(i)
 }
