@@ -139,6 +139,7 @@ console.log(c)*/
 
 //Task 37
 
+/*
 String.prototype.add = function (str) {
     return this + str
 }
@@ -156,4 +157,4 @@ console.log(
             acc[n] = n
             return acc
         }, {})
-)
+)*/
