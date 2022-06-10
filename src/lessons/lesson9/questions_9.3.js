@@ -70,6 +70,7 @@ console.log(test.tests)*/
 
 //Task 44
 
+/*
 function User(name) {
     this.name = name
 }
@@ -80,4 +81,19 @@ console.log(user.isActive)
 User.prototype = {
     isActive: true
 }
-console.log(user.isActive)
+console.log(user.isActive)*/
+
+
+//Task 45
+
+function User(name) {
+    this.name = name
+}
+
+const user = new User('Alex')
+console.log(user.constructor === User)
+
+User.prototype = {
+    isActive: true
+}
+console.log(user.constructor === User)
