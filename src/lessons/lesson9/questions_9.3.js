@@ -44,8 +44,24 @@ test()
 
 //Task 42
 
+/*
 for (var i = 0; i < 10; i++) {
     (function (j) {
         setTimeout(() => console.log(j), 10)
     })(i)
+}*/
+
+
+//Task 43
+
+const test = {
+    prefix: '_',
+    tests: ['1', '2', '3'],
+    addPrefixToTest() {
+        this.tests = this.tests.map(function (testName) {
+            return `${this.prefix}_${testName}`
+        })
+    }
 }
+test.addPrefixToTest()
+console.log(test.tests)
