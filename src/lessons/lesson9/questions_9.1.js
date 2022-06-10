@@ -210,6 +210,7 @@ console.log(
 )*/
 
 //Task 27
+/*
 function User(name) {
     this.name = name
     return 'User'
@@ -224,4 +225,25 @@ const user = new User('Alex')
 const car = new Car('v8')
 
 console.log(user.name)
-console.log(car.engine)
+console.log(car.engine)*/
+
+//Task 28
+const watchBalanceWithLog = function (cb) {
+    let count = 0;
+    return function () {
+        count += 1
+        cb.call(this)
+        console.log(`Balance was watched ${count} times`)
+    }
+}
+const wallet = {
+    money: 100,
+    currency: 'USD',
+    watchBalance() {
+        console.log(`${this.money} ${this.currency}`)
+    }
+}
+wallet.watchBalance = watchBalanceWithLog(wallet.watchBalance)
+wallet.watchBalance()//-> 1000USD /n Balance was watched 1 times
+wallet.watchBalance()//-> 1000USD /n Balance was watched 2 times
+wallet.watchBalance()//-> 1000USD /n Balance was watched 3 times
