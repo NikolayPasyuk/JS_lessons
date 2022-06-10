@@ -28,3 +28,17 @@ const c = {
 }
 c.showB()*/
 
+//Task 31
+
+const a = (x, y) => {
+
+    console.log(y)
+
+    return {
+        a: (z) => {
+            a(y, z)
+        }
+    }
+}
+const res = a(1)
+res.a(2)
