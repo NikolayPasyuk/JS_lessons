@@ -28,9 +28,10 @@ const c = {
 }
 c.showB()*/
 
+
 //Task 31
 
-const a = (x, y) => {
+/*const a = (x, y) => {
 
     console.log(y)
 
@@ -41,4 +42,25 @@ const a = (x, y) => {
     }
 }
 const res = a(1)
-res.a(2)
+res.a(2)*/
+
+
+//Task 32
+
+const user = {
+
+    _data: {
+        name: 'Colin'
+    },
+
+    _methods: {
+        _getName: function () {
+            return this.name
+        }
+    },
+
+    getName() {
+        return this._methods._getName.call(this._data)
+    }
+}
+console.log(user.getName())
