@@ -83,7 +83,7 @@ console.log(cat)*/
 
 //Task 33
 
-let animal = {
+/*let animal = {
     eats: true
 }
 
@@ -93,4 +93,16 @@ function Rabbit(name) {
 
 let rabbit = new Rabbit('White Rabbit')
 Rabbit.prototype = animal
-console.log(rabbit.eats)
+console.log(rabbit.eats)*/
+
+
+//Task 34
+
+function Rabbit(name) {
+    this.name = name
+}
+
+let rabbit = new Rabbit('White Rabbit')
+let rabbit2 = new rabbit.constructor('Black Rabbit')
+
+console.log(rabbit.__proto__ === rabbit2.__proto__)
