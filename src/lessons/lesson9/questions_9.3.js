@@ -140,10 +140,25 @@ foo()*/
 
 //Task 49
 
+/*
 const foo = () => {
     console.log(bar)
     {
         let bar = 5
+    }
+}
+foo()
+*/
+
+
+//Task 50
+
+const foo = () => {
+    console.log(bar)
+    {
+        function bar() {
+            console.log('bar')
+        }
     }
 }
 foo()
