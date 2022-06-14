@@ -227,6 +227,7 @@ console.log(a.__proto__ === b)*/
 
 //Task 54
 
+/*
 const a = {
     name: 'a'
 }
@@ -246,4 +247,19 @@ const c = Object.create(a, {
 })
 a.getName()
 b.getName()
-c.getName()
+c.getName()*/
+
+
+//Task 55
+
+let a = () => {
+    console.log('a')
+}
+const execute = (f) => {
+    setTimeout(f, 1000)
+}
+execute(a)
+
+a = () => {
+    console.log('b')
+}
