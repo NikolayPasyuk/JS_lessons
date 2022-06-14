@@ -252,6 +252,7 @@ c.getName()*/
 
 //Task 55
 
+/*
 let a = () => {
     console.log('a')
 }
@@ -263,3 +264,27 @@ execute(a)
 a = () => {
     console.log('b')
 }
+*/
+
+
+//Task 56
+
+function User() {
+    this.showActive = () => {
+        console.log(this.isActive)
+    }
+}
+
+User.prototype = {
+    isActive: false
+}
+
+const u = new User()
+
+User.prototype = {
+    isActive: true
+}
+
+const u1 = new User()
+u.showActive()
+u1.showActive()
