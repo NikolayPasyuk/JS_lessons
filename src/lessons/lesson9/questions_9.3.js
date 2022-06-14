@@ -197,6 +197,7 @@ obj.c()*/
 
 //Task 52
 
+/*
 const foo = (x, y) => {
     console.log(y)
 
@@ -208,3 +209,16 @@ const foo = (x, y) => {
 }
 const res = foo(1)
 res.bar(5)
+*/
+
+
+//Task 53
+
+const a = {}
+const b = {}
+const c = {}
+Object.setPrototypeOf(a, b)
+
+console.log(b.__proto__ === c.__proto__)
+console.log(a.__proto__ === b.__proto__)
+console.log(a.__proto__ === b)
