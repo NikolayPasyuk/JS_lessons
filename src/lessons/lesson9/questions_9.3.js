@@ -269,6 +269,7 @@ a = () => {
 
 //Task 56
 
+/*
 function User() {
     this.showActive = () => {
         console.log(this.isActive)
@@ -287,4 +288,23 @@ User.prototype = {
 
 const u1 = new User()
 u.showActive()
-u1.showActive()
+u1.showActive()*/
+
+
+//Task 57
+
+const getUsers = () => {
+    return new Promise(() => {
+        setTimeout(() => {
+            return [{name: 'Alex'}]
+        })
+    })
+}
+
+const showUsers = async () => {
+    const users = await getUsers()
+    console.log(users)
+}
+console.log('Before')
+showUsers()
+console.log('After')
