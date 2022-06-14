@@ -153,12 +153,42 @@ foo()
 
 //Task 50
 
-const foo = () => {
-    console.log(bar)
+/*const foo = () => {
+    bar()
     {
         function bar() {
             console.log('bar')
         }
     }
 }
-foo()
+foo()*/
+
+
+//Task 51
+
+function toString() {
+    return 'Global'
+}
+
+const obj = {
+    a: () => {
+        console.log(
+            this.toString()
+        )
+    },
+    b() {
+        console.log(
+            this.toString()
+        )
+    },
+    c() {
+        (() => {
+            console.log(
+                this.toString()
+            )
+        })()
+    }
+}
+obj.a()
+obj.b()
+obj.c()
