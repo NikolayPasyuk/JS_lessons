@@ -214,6 +214,7 @@ res.bar(5)
 
 //Task 53
 
+/*
 const a = {}
 const b = {}
 const c = {}
@@ -221,4 +222,28 @@ Object.setPrototypeOf(a, b)
 
 console.log(b.__proto__ === c.__proto__)
 console.log(a.__proto__ === b.__proto__)
-console.log(a.__proto__ === b)
+console.log(a.__proto__ === b)*/
+
+
+//Task 54
+
+const a = {
+    name: 'a'
+}
+
+Object.defineProperty(a, 'getName', {
+    value: function () {
+        console.log(this.name)
+    }
+})
+
+const b = Object.assign({}, a, {name: 'b'})
+
+const c = Object.create(a, {
+    name: {
+        value: 'c'
+    }
+})
+a.getName()
+b.getName()
+c.getName()
