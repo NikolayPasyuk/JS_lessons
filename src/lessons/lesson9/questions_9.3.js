@@ -166,6 +166,7 @@ foo()*/
 
 //Task 51
 
+/*
 function toString() {
     return 'Global'
 }
@@ -191,4 +192,19 @@ const obj = {
 }
 obj.a()
 obj.b()
-obj.c()
+obj.c()*/
+
+
+//Task 52
+
+const foo = (x, y) => {
+    console.log(y)
+
+    return {
+        bar: (z) => {
+            foo(y, z)
+        }
+    }
+}
+const res = foo(1)
+res.bar(5)
