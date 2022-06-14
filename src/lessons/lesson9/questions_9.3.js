@@ -115,6 +115,7 @@ new Promise(() => {
 
 //Task 47
 
+/*
 let a = 5
 
 Number.prototype.addOne = function () {
@@ -122,4 +123,15 @@ Number.prototype.addOne = function () {
     return old + 1
 }
 a = a.addOne()
-console.log(a)
+console.log(a)*/
+
+
+//Task 48
+
+const foo = () => {
+    console.log(bar)
+    {
+        var bar = 5
+    }
+}
+foo()
