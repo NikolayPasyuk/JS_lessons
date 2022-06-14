@@ -128,10 +128,22 @@ console.log(a)*/
 
 //Task 48
 
+/*
 const foo = () => {
     console.log(bar)
     {
         var bar = 5
+    }
+}
+foo()*/
+
+
+//Task 49
+
+const foo = () => {
+    console.log(bar)
+    {
+        let bar = 5
     }
 }
 foo()
