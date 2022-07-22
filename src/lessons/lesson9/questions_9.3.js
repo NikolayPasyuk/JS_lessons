@@ -293,6 +293,7 @@ u1.showActive()*/
 
 //Task 57
 
+/*
 const getUsers = () => {
     return new Promise(() => {
         setTimeout(() => {
@@ -307,4 +308,4 @@ const showUsers = async () => {
 }
 console.log('Before')
 showUsers()
-console.log('After')
+console.log('After')*/
