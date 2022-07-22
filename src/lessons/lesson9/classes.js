@@ -21,6 +21,11 @@ class Rabbit extends Animal {
     hide() {
         alert(`${this.name} прячется!`)
     }
+
+    stop() {
+        super.stop()
+        this.hide()
+    }
 }
 
 let rabbit = new Rabbit('Мой кролик')
@@ -28,7 +33,7 @@ rabbit.run(5)
 rabbit.hide()
 
 
-function f(phrase) {
+/*function f(phrase) {
     return class {
         sayHi() {
             alert(phrase)
@@ -39,4 +44,5 @@ function f(phrase) {
 class User extends f('Привет') {
 }
 
-new User().sayHi()
+new User().sayHi()*/
+
