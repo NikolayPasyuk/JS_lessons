@@ -54,6 +54,7 @@ alert(fib(7))*/
 
 // динамическое программирование снизу вверх
 
+/*
 function fib(n) {
     let a = 1;
     let b = 1;
@@ -65,4 +66,19 @@ function fib(n) {
     return b;
 }
 
-alert(fib(3))
+alert(fib(3))*/
+
+
+//Напишите функцию sumTo(n), которая вычисляет сумму чисел 1 + 2 + ... + n
+
+//С использованием цикла
+
+function sumTo(n) {
+    let sum = 0
+    for (let i = 1; i <= n; i++) {
+        sum += i
+    }
+    return sum
+}
+
+alert(sumTo(100))
