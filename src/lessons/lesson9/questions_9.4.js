@@ -87,9 +87,19 @@ alert(sumTo(100))*/
 
 //через рекурсию
 
+/*
 function sumTo(n) {
     if (n === 1) return 1
     return n + sumTo(n - 1)
+}
+
+alert(sumTo(100))*/
+
+
+//С использованием формулы арифметической прогрессии
+
+function sumTo(n) {
+    return n * (n + 1) / 2
 }
 
 alert(sumTo(100))
