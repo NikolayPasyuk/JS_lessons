@@ -34,8 +34,19 @@ function factorial(n) {
 
 alert(factorial(5))*/
 
+/*
 function factorial(n) {
     return n ? n * factorial(n - 1) : 1
 }
 
-alert(factorial(5))
+alert(factorial(5))*/
+
+
+//Напишите функцию fib(n) которая возвращает n-е число Фибоначчи
+
+function fib(n) {
+    return n <= 1 ? n : fib(n - 1) + fib(n - 2)
+}
+
+alert(fib(3))
+alert(fib(7))
