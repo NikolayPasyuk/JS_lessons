@@ -73,12 +73,23 @@ alert(fib(3))*/
 
 //С использованием цикла
 
+/*
 function sumTo(n) {
     let sum = 0
     for (let i = 1; i <= n; i++) {
         sum += i
     }
     return sum
+}
+
+alert(sumTo(100))*/
+
+
+//через рекурсию
+
+function sumTo(n) {
+    if (n === 1) return 1
+    return n + sumTo(n - 1)
 }
 
 alert(sumTo(100))
