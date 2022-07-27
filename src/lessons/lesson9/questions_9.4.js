@@ -13,6 +13,7 @@ console.log(minValue)*/
 
 //В массиве найти максимальное число
 
+/*
 const numbers = [1, 34, 45, -123, 1234, 23]
 let maxValue = [0]
 
@@ -21,4 +22,13 @@ for (let i = 0; i < numbers.length; i++) {
         maxValue = numbers[i]
     }
 }
-console.log(maxValue)
+console.log(maxValue)*/
+
+
+//написать функцию factorial(n), которая возвращает n!, используя рекурсию
+
+function factorial(n) {
+    return (n !== 1) ? n * factorial(n - 1) : 1
+}
+
+alert(factorial(5))
