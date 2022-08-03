@@ -33,9 +33,19 @@ bar()
 
 
 //Task 58
+/*
 const foo = () => {
     let a = b = 10
 }
 foo()
 console.log(typeof a === 'undefined')
-console.log(b === 'undefined')
+console.log(b === 'undefined')*/
+
+
+//Task 59
+{
+    if (true) {
+        var a = 10
+    }
+}
+console.log(a)
