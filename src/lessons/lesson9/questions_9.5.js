@@ -53,10 +53,29 @@ console.log(a)*/
 
 
 //Task 60
+/*
 for (var i = 0; i < 10; i++) {
 }
 console.log(i)
 
 for (let j = 0; j < 10; j++) {
 }
-console.log(j)
+console.log(j)*/
+
+
+//Task 61
+function Counter() {
+    let count = 0
+
+    this.up = function () {
+        return ++count
+    }
+    this.down = function () {
+        return --count
+    }
+}
+
+let counter = new Counter()
+console.log(counter.up())
+console.log(counter.up())
+console.log(counter.down())
