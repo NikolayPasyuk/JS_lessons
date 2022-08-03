@@ -64,6 +64,7 @@ console.log(j)*/
 
 
 //Task 61
+/*
 function Counter() {
     let count = 0
 
@@ -78,4 +79,24 @@ function Counter() {
 let counter = new Counter()
 console.log(counter.up())
 console.log(counter.up())
-console.log(counter.down())
+console.log(counter.down())*/
+
+
+//Task 62
+function makeArmy() {
+    let shooters = [];
+
+    let i = 0;
+    while (i < 10) {
+        let shooter = function () {
+            console.log(i);
+        };
+        shooters.push(shooter);
+        i++;
+    }
+    return shooters;
+}
+
+let army = makeArmy();
+army[0]();
+army[5]();
