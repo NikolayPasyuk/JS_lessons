@@ -16,6 +16,8 @@ console.log(b)
 console.log(c)*/
 
 
+//what will the function foo and bar output
+/*
 foo()
 
 function foo() {
@@ -27,4 +29,13 @@ bar()
     function bar() {
         console.log('bar')
     }
+}*/
+
+
+//Task 58
+const foo = () => {
+    let a = b = 10
 }
+foo()
+console.log(typeof a === 'undefined')
+console.log(b === 'undefined')
