@@ -105,6 +105,7 @@ army[5]();*/
 
 //Task 63
 
+/*
 let user = {
     name: 'Alex',
     go: function () {
@@ -112,4 +113,20 @@ let user = {
     }
 };
 user.go();
-(user.go)()
+(user.go)()*/
+
+
+//Task 64
+
+let user, go;
+
+user = {
+    name: 'Alex',
+    go: function () {
+        console.log(this.name)
+    }
+};
+user.go();
+(user.go)();
+(go = user.go)();
+(user.go || user.stop)()
