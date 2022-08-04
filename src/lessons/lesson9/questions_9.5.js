@@ -118,6 +118,7 @@ user.go();
 
 //Task 64
 
+/*
 let user, go;
 
 user = {
@@ -129,4 +130,17 @@ user = {
 user.go();
 (user.go)();
 (go = user.go)();
-(user.go || user.stop)()
+(user.go || user.stop)()*/
+
+
+//Task 65
+
+const user = {
+    age: 23,
+    showAge: () => {
+        (() => {
+            console.log(this.age)
+        })()
+    }
+}
+user.showAge.call({age: 20})
