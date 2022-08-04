@@ -83,6 +83,7 @@ console.log(counter.down())*/
 
 
 //Task 62
+/*
 function makeArmy() {
     let shooters = [];
 
@@ -99,4 +100,16 @@ function makeArmy() {
 
 let army = makeArmy();
 army[0]();
-army[5]();
+army[5]();*/
+
+
+//Task 63
+
+let user = {
+    name: 'Alex',
+    go: function () {
+        console.log(this.name)
+    }
+};
+user.go();
+(user.go)()
