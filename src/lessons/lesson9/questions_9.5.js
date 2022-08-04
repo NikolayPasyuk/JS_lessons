@@ -135,6 +135,7 @@ user.go();
 
 //Task 65
 
+/*
 const user = {
     age: 23,
     showAge: () => {
@@ -143,4 +144,17 @@ const user = {
         })()
     }
 }
-user.showAge.call({age: 20})
+user.showAge.call({age: 20})*/
+
+
+//Task 66
+
+function makeCar() {
+    return {
+        model: 'Ford',
+        ref: this
+    };
+}
+
+let car = makeCar();
+console.log(car.ref.model)
