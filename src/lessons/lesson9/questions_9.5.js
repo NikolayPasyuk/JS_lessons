@@ -163,6 +163,7 @@ console.log(car.ref.model)*/
 
 //Task 67
 
+/*
 function User(name) {
     this.name = name
 }
@@ -175,4 +176,17 @@ const max = new hanna.constructor('Max')
 
 console.log(alex.name)
 console.log(hanna.name)
-console.log(max.name)
+console.log(max.name)*/
+
+
+//Task 68
+
+function User(name, age) {
+    return {
+        name,
+        age
+    }
+}
+
+const user = new User('Alex')
+console.log(user.constructor === User)
