@@ -195,6 +195,7 @@ console.log(user.constructor === User)*/
 
 //Task 69
 
+/*
 function Rabbit(name) {
     this.name = name
 }
@@ -207,4 +208,19 @@ let rabbit = new Rabbit('Rabbit');
 rabbit.sayHi();
 Rabbit.prototype.sayHi();
 Object.getPrototypeOf(rabbit).sayHi();
-rabbit.__proto__.sayHi();
+rabbit.__proto__.sayHi();*/
+
+
+//Task 70
+
+const userPrototype = {
+    showName() {
+        console.log(this.name)
+    }
+}
+const user = Object.create(null)
+user.__proto__ = userPrototype
+user.name = 'Alex'
+
+console.log(Object.getPrototypeOf(user) === userPrototype)
+user.showName()
