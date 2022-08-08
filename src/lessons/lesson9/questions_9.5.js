@@ -181,6 +181,7 @@ console.log(max.name)*/
 
 //Task 68
 
+/*
 function User(name, age) {
     return {
         name,
@@ -189,4 +190,21 @@ function User(name, age) {
 }
 
 const user = new User('Alex')
-console.log(user.constructor === User)
+console.log(user.constructor === User)*/
+
+
+//Task 69
+
+function Rabbit(name) {
+    this.name = name
+}
+
+Rabbit.prototype.sayHi = function () {
+    console.log(this.name)
+};
+let rabbit = new Rabbit('Rabbit');
+
+rabbit.sayHi();
+Rabbit.prototype.sayHi();
+Object.getPrototypeOf(rabbit).sayHi();
+rabbit.__proto__.sayHi();
