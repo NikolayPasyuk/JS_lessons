@@ -213,6 +213,7 @@ rabbit.__proto__.sayHi();*/
 
 //Task 70
 
+/*
 const userPrototype = {
     showName() {
         console.log(this.name)
@@ -223,4 +224,4 @@ user.__proto__ = userPrototype
 user.name = 'Alex'
 
 console.log(Object.getPrototypeOf(user) === userPrototype)
-user.showName()
+user.showName()*/
