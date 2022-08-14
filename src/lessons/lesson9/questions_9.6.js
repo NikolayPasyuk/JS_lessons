@@ -23,8 +23,14 @@ function accum(string) {
 
 // Primitives
 
+/*
 const a = 10;
 const b = 20;
 const c = 10;
 console.log(a === b);
-console.log(a === c);
+console.log(a === c);*/
+
+
+// Objects
+console.log({a: 10} === {a: 10});
+console.log({} === {});
