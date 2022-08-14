@@ -66,3 +66,13 @@ console.log(e.toString());*/
 /*
 const f = Object.create(null);
 console.log(f.toString());*/
+
+
+// NaN
+
+console.log(parseInt('test'));
+console.log(Math.sqrt(-1));
+
+console.log(NaN === NaN);
+console.log(NaN == NaN);
+console.log(isNaN(NaN));
