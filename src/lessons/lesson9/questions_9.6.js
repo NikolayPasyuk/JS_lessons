@@ -91,9 +91,25 @@ console.log(a)*/
 
 
 // Array
-const c = [];
+// const c = [];
+
 // Reassign Error
 // c = {};
+
+/*
 c.push(5);
 c.push(10);
-console.log(c);
+console.log(c);*/
+
+
+// START - temporal dead zone for 'b' and 'c'
+
+// console.log(a);// undefined
+// console.log(b);
+// console.log(c);
+
+// var a = 10;
+// END - temporal dead zone for 'b'
+// let b = 20;
+// END - temporal dead zone for 'c'
+// const c = 30;
