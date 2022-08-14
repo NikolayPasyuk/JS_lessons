@@ -58,5 +58,11 @@ console.log(c.prop)*/
 
 // Object with prototype
 
-const e ={};
-console.log(e.toString());
+/*const e ={};
+console.log(e.toString());*/
+
+//Object without prototype
+
+/*
+const f = Object.create(null);
+console.log(f.toString());*/
