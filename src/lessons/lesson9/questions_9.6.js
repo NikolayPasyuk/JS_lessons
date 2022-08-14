@@ -47,10 +47,16 @@ console.log(a === b);*/
 
 // Inheritance
 
+/*
 const a = {prop: 'Test'};
 const b = Object.create(a);
 const c = Object.create(b);
 console.log(b);
 console.log(b.prop);
 console.log(c);
-console.log(c.prop)
+console.log(c.prop)*/
+
+// Object with prototype
+
+const e ={};
+console.log(e.toString());
