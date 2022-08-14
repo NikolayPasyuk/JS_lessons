@@ -32,5 +32,13 @@ console.log(a === c);*/
 
 
 // Objects
+/*
 console.log({a: 10} === {a: 10});
-console.log({} === {});
+console.log({} === {});*/
+
+
+// Equal objects
+
+const a = {a: 10};
+const b = a;
+console.log(a === b);
