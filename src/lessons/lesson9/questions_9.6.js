@@ -39,6 +39,18 @@ console.log({} === {});*/
 
 // Equal objects
 
+/*
 const a = {a: 10};
 const b = a;
-console.log(a === b);
+console.log(a === b);*/
+
+
+// Inheritance
+
+const a = {prop: 'Test'};
+const b = Object.create(a);
+const c = Object.create(b);
+console.log(b);
+console.log(b.prop);
+console.log(c);
+console.log(c.prop)
