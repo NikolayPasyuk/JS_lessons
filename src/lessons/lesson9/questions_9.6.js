@@ -113,3 +113,38 @@ console.log(c);*/
 // let b = 20;
 // END - temporal dead zone for 'c'
 // const c = 30;
+
+
+// function to return indexes of uppercase letters of a string
+
+/*function capitals(word) {
+    let bigLetters = word.toUpperCase().split('');
+    let smallLetters = word.split('');
+    let res = [];
+    for (let i = 0; i < word.length; i++) {
+        if (smallLetters[i] === bigLetters[i]) {
+            res.push(i)
+        }
+    }
+    return res
+}*/
+
+/*function capitals(word) {
+    let res = [];
+    word.split('').forEach(function (letter, index) {
+        if (letter === letter.toUpperCase()) {
+            res.push(index)
+        }
+    })
+    return res
+}*/
+
+/*
+const capitals = (word) =>
+    word.split('').reduce((result, letter, index) => {
+        if (letter === letter.toUpperCase()) {
+            result.push(index)
+        }
+        return result
+    }, [])
+*/
