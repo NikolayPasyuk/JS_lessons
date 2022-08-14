@@ -70,9 +70,30 @@ console.log(f.toString());*/
 
 // NaN
 
+/*
 console.log(parseInt('test'));
 console.log(Math.sqrt(-1));
 
 console.log(NaN === NaN);
 console.log(NaN == NaN);
-console.log(isNaN(NaN));
+console.log(isNaN(NaN));*/
+
+
+// Object
+const a = {a: 10};
+
+//Reassign Error
+// a = {a: 20};
+
+/*
+a.b = 20;
+console.log(a)*/
+
+
+// Array
+const c = [];
+// Reassign Error
+// c = {};
+c.push(5);
+c.push(10);
+console.log(c);
