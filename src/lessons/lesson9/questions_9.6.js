@@ -184,6 +184,7 @@ person3.name = 'Jack';
 console.log(person3.name);*/
 
 
+/*
 function Employee(name, position) {
     this.name = name;
     this.position = position;
@@ -191,4 +192,25 @@ function Employee(name, position) {
 
 const person = new Employee('Nick', 'Front-end');
 console.log(person.name);
-console.log(person.position);
+console.log(person.position);*/
+
+
+// Spread
+// with array
+const names1 = ['Jack', 'Max'];
+const names2 = ['Leo', 'Tommy', ...names1];
+console.log(names2);
+// with object
+const obj1 = {name: 'Jack'};
+const obj2 = {
+    name: 'Max',
+    age: 30,
+    ...obj1
+};
+console.log(obj2);
+
+// Rest
+const log = (a, b, ...rest) => {
+    console.log(a, b, rest);
+};
+console.log('Basic', 'rest', 'operator', 'usage');
