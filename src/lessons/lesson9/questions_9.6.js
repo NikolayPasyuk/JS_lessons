@@ -162,20 +162,33 @@ console.log(typeof name);*/
 
 
 // Object Literal
-const person1 = {
+/*const person1 = {
     name: 'Nick'
 }
-console.log(person1.name);
+console.log(person1.name);*/
 
 // Function Constructor
+/*
 function Person(name) {
     this.name = name
 }
 
 const person2 = new Person('Max');
 console.log(person2.name);
+*/
 
 // Method 'Object.create'
+/*
 const person3 = Object.create(person1);
 person3.name = 'Jack';
-console.log(person3.name);
+console.log(person3.name);*/
+
+
+function Employee(name, position) {
+    this.name = name;
+    this.position = position;
+}
+
+const person = new Employee('Nick', 'Front-end');
+console.log(person.name);
+console.log(person.position);
