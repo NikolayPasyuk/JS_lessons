@@ -151,10 +151,31 @@ const capitals = (word) =>
 
 
 // Primitive
-const name = 'Nick';
-console.log(typeof name);
+/*const name = 'Nick';
+console.log(typeof name);*/
 
 // No errors
-console.log(name.toUpperCase());
+// console.log(name.toUpperCase());
+
 // Wrapper Object 'String'
-console.log(new String(name).toUpperCase());
+// console.log(new String(name).toUpperCase());
+
+
+// Object Literal
+const person1 = {
+    name: 'Nick'
+}
+console.log(person1.name);
+
+// Function Constructor
+function Person(name) {
+    this.name = name
+}
+
+const person2 = new Person('Max');
+console.log(person2.name);
+
+// Method 'Object.create'
+const person3 = Object.create(person1);
+person3.name = 'Jack';
+console.log(person3.name);
