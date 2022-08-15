@@ -197,10 +197,12 @@ console.log(person.position);*/
 
 // Spread
 // with array
-const names1 = ['Jack', 'Max'];
+/*const names1 = ['Jack', 'Max'];
 const names2 = ['Leo', 'Tommy', ...names1];
-console.log(names2);
+console.log(names2);*/
+
 // with object
+/*
 const obj1 = {name: 'Jack'};
 const obj2 = {
     name: 'Max',
@@ -208,9 +210,29 @@ const obj2 = {
     ...obj1
 };
 console.log(obj2);
+*/
 
 // Rest
+/*
 const log = (a, b, ...rest) => {
     console.log(a, b, rest);
 };
-console.log('Basic', 'rest', 'operator', 'usage');
+console.log('Basic', 'rest', 'operator', 'usage');*/
+
+
+// Array destructuring
+const people = ['Jack', 'Max', 'Leo'];
+// ES5
+/*let jack = people[0];
+let max = people[1];
+let leo = people[2];*/
+// ES6
+const [jack, max, leo] = people;
+
+// Object destructuring
+const person = {name: 'Jack', age: 20};
+// ES5
+/*let name = person.name;
+let age = person.age;*/
+// ES6
+const {name,age}=person
