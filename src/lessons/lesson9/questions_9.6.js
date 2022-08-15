@@ -80,7 +80,7 @@ console.log(isNaN(NaN));*/
 
 
 // Object
-const a = {a: 10};
+// const a = {a: 10};
 
 //Reassign Error
 // a = {a: 20};
@@ -148,3 +148,13 @@ const capitals = (word) =>
         return result
     }, [])
 */
+
+
+// Primitive
+const name = 'Nick';
+console.log(typeof name);
+
+// No errors
+console.log(name.toUpperCase());
+// Wrapper Object 'String'
+console.log(new String(name).toUpperCase());
