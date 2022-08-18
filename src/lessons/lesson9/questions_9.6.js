@@ -221,18 +221,18 @@ console.log('Basic', 'rest', 'operator', 'usage');*/
 
 
 // Array destructuring
-const people = ['Jack', 'Max', 'Leo'];
+// const people = ['Jack', 'Max', 'Leo'];
 // ES5
 /*let jack = people[0];
 let max = people[1];
 let leo = people[2];*/
 // ES6
-const [jack, max, leo] = people;
+// const [jack, max, leo] = people;
 
 // Object destructuring
-const person = {name: 'Jack', age: 20};
+// const person = {name: 'Jack', age: 20};
 // ES5
 /*let name = person.name;
 let age = person.age;*/
 // ES6
-const {name,age}=person
+// const {name,age}=person
