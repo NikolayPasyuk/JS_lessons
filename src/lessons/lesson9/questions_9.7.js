@@ -58,7 +58,7 @@ setTimeout(a.logName, 100)*/
 
 //Task 75
 
-const a = {
+/*const a = {
     name: 'a',
     getName() {
         console.log(this.name)
@@ -75,4 +75,26 @@ a.getName()
 const foo = a.getName.bind(b)
 a.getName()
 a.getName.call(b)
-foo.call(c)
+foo.call(c)*/
+
+
+//Task 76
+
+const a = {
+    name: 'a'
+}
+const b = {
+    name: 'b',
+
+    hi() {
+        (() => {
+            console.log(this.name)
+        }).call(a)
+    }
+}
+
+const c = {
+    name: 'c'
+}
+
+b.hi.call(c)
