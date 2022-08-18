@@ -31,6 +31,7 @@ a = () => {
 
 //Task 73
 
+/*
 const a = {
     msg: 'Hello World',
     getMsg() {
@@ -38,4 +39,17 @@ const a = {
         console.log(this.msg)
     }
 }
-a.getMsg()
+a.getMsg()*/
+
+
+//Task 74
+
+this.name = 'global'
+
+const a = {
+    name: 'a',
+    logName: () => {
+        console.log(this.name)
+    }
+}
+setTimeout(a.logName, 100)
