@@ -15,6 +15,7 @@ foo()*/
 
 //Task 72
 
+/*
 let a = () => {
     console.log('a')
 }
@@ -25,4 +26,16 @@ const run = (cb) => {
 run(a)
 a = () => {
     console.log('new a')
+}*/
+
+
+//Task 73
+
+const a = {
+    msg: 'Hello World',
+    getMsg() {
+        const msg = 'Hello getMsg';
+        console.log(this.msg)
+    }
 }
+a.getMsg()
