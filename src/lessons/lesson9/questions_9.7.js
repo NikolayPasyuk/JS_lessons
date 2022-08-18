@@ -44,6 +44,7 @@ a.getMsg()*/
 
 //Task 74
 
+/*
 this.name = 'global'
 
 const a = {
@@ -52,4 +53,26 @@ const a = {
         console.log(this.name)
     }
 }
-setTimeout(a.logName, 100)
+setTimeout(a.logName, 100)*/
+
+
+//Task 75
+
+const a = {
+    name: 'a',
+    getName() {
+        console.log(this.name)
+    }
+}
+
+const b = {
+    name: 'b'
+}
+const c = {
+    name: 'c'
+}
+a.getName()
+const foo = a.getName.bind(b)
+a.getName()
+a.getName.call(b)
+foo.call(c)
