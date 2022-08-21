@@ -285,6 +285,7 @@ logNum.bind({num: 'c'})()*/
 
 //Task 89
 
+/*
 function User(name) {
     this.name = 'default'
     this.sayHi = () => {
@@ -293,4 +294,16 @@ function User(name) {
 }
 
 const user = new User('John')
-user.sayHi()
+user.sayHi()*/
+
+
+//Task 90
+
+console.log(
+    [].__proto__.__proto__ === null
+)
+
+console.log(
+    (() => {
+    }).__proto__.__proto__ === Object.prototype
+)
