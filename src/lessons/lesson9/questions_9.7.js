@@ -213,6 +213,7 @@ console.log(b.getName())*/
 
 //Task 83
 
+/*
 function Test(name) {
     this.name = name
     if (!name) {
@@ -223,4 +224,18 @@ function Test(name) {
 const t = new Test()
 const tl = new Test('Should return undefined!')
 
-console.log(t.__proto__ === tl.__proto__)
+console.log(t.__proto__ === tl.__proto__)*/
+
+
+//Task 84
+
+Promise
+    .resolve(10)
+    .then(res => console.log(res))
+    .then(res => Promise.resolve(res))
+    .then(console.log)
+    .then(res => {
+        if (!res) throw new Error('New error')
+    })
+    .then(res => console.log(res.message))
+    .catch(res => console.log(res.message))
