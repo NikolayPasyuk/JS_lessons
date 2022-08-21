@@ -112,7 +112,7 @@ console.log(b)*/
 
 //Task 78
 
-Object.prototype.name = 'Object'
+/*Object.prototype.name = 'Object'
 
 const a = {
     getName() {
@@ -134,4 +134,18 @@ const c = Object.create(a, {
         value: 'c'
     }
 })
-c.getName()
+c.getName()*/
+
+
+//Task 79
+
+const user = {
+    sleep() {
+        this.isSleeping = true
+    }
+}
+
+const john = {}
+john.__proto__ = user
+john.sleep()
+console.log(john.isSleeping)
