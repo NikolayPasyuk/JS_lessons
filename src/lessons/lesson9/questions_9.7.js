@@ -299,6 +299,7 @@ user.sayHi()*/
 
 //Task 90
 
+/*
 console.log(
     [].__proto__.__proto__ === null
 )
@@ -306,4 +307,15 @@ console.log(
 console.log(
     (() => {
     }).__proto__.__proto__ === Object.prototype
-)
+)*/
+
+
+//Task 91
+
+function User() {
+}
+
+User.prototype = {}
+
+const user = new User.prototype.constructor()
+console.log(user.constructor === User)
