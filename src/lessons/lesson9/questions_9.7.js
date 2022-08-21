@@ -229,6 +229,7 @@ console.log(t.__proto__ === tl.__proto__)*/
 
 //Task 84
 
+/*
 Promise
     .resolve(10)
     .then(res => console.log(res))
@@ -238,4 +239,13 @@ Promise
         if (!res) throw new Error('New error')
     })
     .then(res => console.log(res.message))
-    .catch(res => console.log(res.message))
+    .catch(res => console.log(res.message))*/
+
+
+//Task 85
+
+const arr = [1, 2, 3, 4];
+const [a, b, ...c] = arr
+console.log(a)
+console.log(b)
+console.log(c)
