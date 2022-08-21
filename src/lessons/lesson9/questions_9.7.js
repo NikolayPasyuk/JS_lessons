@@ -312,10 +312,34 @@ console.log(
 
 //Task 91
 
+/*
 function User() {
 }
 
 User.prototype = {}
 
 const user = new User.prototype.constructor()
-console.log(user.constructor === User)
+console.log(user.constructor === User)*/
+
+
+//Task 92
+
+let obj = Object.create(Object.prototype, {
+    name: {
+        value: 'Alex',
+        enumerable: true,
+    }
+})
+
+Object.defineProperty(obj, 'name', {
+    value: 'Alex',
+    enumerable: true,
+    writable: true,
+    configurable: false
+})
+
+Object.defineProperty(obj, 'name', {
+    value: 'Alex',
+    enumerable: false
+})
+console.log(obj)
