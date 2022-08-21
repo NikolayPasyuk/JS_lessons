@@ -197,7 +197,7 @@ console.log(User.__proto__ === Function.prototype)*/
 
 //Task 82
 
-class A {
+/*class A {
     getName() {
         return this.name
     }
@@ -208,5 +208,19 @@ const b = Object.create(A, {
         value: 'b'
     }
 })
-console.log(b.getName())
+console.log(b.getName())*/
 
+
+//Task 83
+
+function Test(name) {
+    this.name = name
+    if (!name) {
+        return {name: 'No test name!'}
+    }
+}
+
+const t = new Test()
+const tl = new Test('Should return undefined!')
+
+console.log(t.__proto__ === tl.__proto__)
