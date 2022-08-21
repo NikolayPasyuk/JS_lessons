@@ -254,5 +254,16 @@ console.log(c)*/
 
 //Task 86
 
+/*
 let [a, b, c] = 'abcccc';
-console.log(a, b, c)
+console.log(a, b, c)*/
+
+
+//Task 87
+
+let user = {
+    name: 'Default Name'
+};
+
+[user.name, user.surname] = 'Name Surname'.split(' ')
+console.log(user.name)
