@@ -103,7 +103,35 @@ b.hi.call(c)*/
 
 //Task 77
 
+/*
 const a = Object.create(null, {})
 const b = {}
 b[a] = 'a'
-console.log(b)
+console.log(b)*/
+
+
+//Task 78
+
+Object.prototype.name = 'Object'
+
+const a = {
+    getName() {
+        console.log(this.name)
+    }
+}
+
+const b = {
+    name: 'b'
+}
+
+a.getName()
+
+b.__proto__ = a;
+b.getName()
+
+const c = Object.create(a, {
+    name: {
+        value: 'c'
+    }
+})
+c.getName()
