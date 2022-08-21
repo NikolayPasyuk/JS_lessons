@@ -80,6 +80,7 @@ foo.call(c)*/
 
 //Task 76
 
+/*
 const a = {
     name: 'a'
 }
@@ -97,4 +98,12 @@ const c = {
     name: 'c'
 }
 
-b.hi.call(c)
+b.hi.call(c)*/
+
+
+//Task 77
+
+const a = Object.create(null, {})
+const b = {}
+b[a] = 'a'
+console.log(b)
