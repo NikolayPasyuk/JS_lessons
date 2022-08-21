@@ -272,6 +272,7 @@ console.log(user.name)*/
 
 //Task 88
 
+/*
 let num = 'a'
 
 function logNum() {
@@ -279,4 +280,17 @@ function logNum() {
 }
 
 num = 'b'
-logNum.bind({num: 'c'})()
+logNum.bind({num: 'c'})()*/
+
+
+//Task 89
+
+function User(name) {
+    this.name = 'default'
+    this.sayHi = () => {
+        console.log(name)
+    }
+}
+
+const user = new User('John')
+user.sayHi()
