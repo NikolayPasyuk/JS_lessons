@@ -155,6 +155,7 @@ console.log(john.isSleeping)
 
 //Task 80
 
+/*
 console.log(Object.__proto__ === Function.prototype)
 
 const arr = []
@@ -165,4 +166,29 @@ const a = () => {
 console.log(a.__proto__.__proto__.constructor === Object)
 
 arr.__proto__ = []
-console.log(arr.__proto__.__proto__ === Object.prototype)
+console.log(arr.__proto__.__proto__ === Object.prototype)*/
+
+
+//Task 81
+
+class BaseUser {
+}
+
+class User extends BaseUser {
+    constructor(name) {
+        super()
+        this.name = name;
+    }
+
+    getName() {
+        return this.name
+    }
+}
+
+const user = new User('Alex')
+
+console.log(user.__proto__ === User.prototype)
+
+console.log(typeof User)
+console.log(User === User.prototype.constructor)
+console.log(User.__proto__ === Function.prototype)
