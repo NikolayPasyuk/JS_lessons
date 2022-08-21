@@ -261,9 +261,22 @@ console.log(a, b, c)*/
 
 //Task 87
 
+/*
 let user = {
     name: 'Default Name'
 };
 
 [user.name, user.surname] = 'Name Surname'.split(' ')
-console.log(user.name)
+console.log(user.name)*/
+
+
+//Task 88
+
+let num = 'a'
+
+function logNum() {
+    console.log(num)
+}
+
+num = 'b'
+logNum.bind({num: 'c'})()
