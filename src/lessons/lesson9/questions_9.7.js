@@ -171,6 +171,7 @@ console.log(arr.__proto__.__proto__ === Object.prototype)*/
 
 //Task 81
 
+/*
 class BaseUser {
 }
 
@@ -191,4 +192,21 @@ console.log(user.__proto__ === User.prototype)
 
 console.log(typeof User)
 console.log(User === User.prototype.constructor)
-console.log(User.__proto__ === Function.prototype)
+console.log(User.__proto__ === Function.prototype)*/
+
+
+//Task 82
+
+class A {
+    getName() {
+        return this.name
+    }
+}
+
+const b = Object.create(A, {
+    name: {
+        value: 'b'
+    }
+})
+console.log(b.getName())
+
