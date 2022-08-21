@@ -139,6 +139,7 @@ c.getName()*/
 
 //Task 79
 
+/*
 const user = {
     sleep() {
         this.isSleeping = true
@@ -149,3 +150,19 @@ const john = {}
 john.__proto__ = user
 john.sleep()
 console.log(john.isSleeping)
+*/
+
+
+//Task 80
+
+console.log(Object.__proto__ === Function.prototype)
+
+const arr = []
+console.log(arr.constructor === Array)
+
+const a = () => {
+}
+console.log(a.__proto__.__proto__.constructor === Object)
+
+arr.__proto__ = []
+console.log(arr.__proto__.__proto__ === Object.prototype)
