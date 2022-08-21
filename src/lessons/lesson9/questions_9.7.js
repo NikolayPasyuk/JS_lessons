@@ -324,6 +324,7 @@ console.log(user.constructor === User)*/
 
 //Task 92
 
+/*
 let obj = Object.create(Object.prototype, {
     name: {
         value: 'Alex',
@@ -342,4 +343,19 @@ Object.defineProperty(obj, 'name', {
     value: 'Alex',
     enumerable: false
 })
-console.log(obj)
+console.log(obj)*/
+
+
+//Task 93
+
+const group = {
+    name: 'Samurai-1',
+    users: ['Alex'],
+
+    showUsersWithGroup() {
+        group.users.forEach(function (user) {
+            console.log(`Group:${this.name}, User:${user}`)
+        }, this)
+    }
+}
+group.showUsersWithGroup()
