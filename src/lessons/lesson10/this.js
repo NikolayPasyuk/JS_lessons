@@ -246,4 +246,3 @@
 //
 // a.getName.call(b)
 // foo.call(c)
-
