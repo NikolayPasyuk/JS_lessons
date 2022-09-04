@@ -4,6 +4,7 @@
 //Object.getOwnPropertyDescriptors
 //Object.create
 //Object.defineProperty
+//Object.defineProperties
 
 /*const user = {
     name: 'Alex',
@@ -34,4 +35,15 @@ Object.defineProperty(user2, 'name', {
     writable: true,
     enumerable: true,
     configurable: true
+})
+
+const user3 = {}
+
+Object.defineProperties(user2, {
+    name: {
+        value: 'Alex',
+        writable: true,
+        enumerable: true,
+        configurable: true
+    }
 })
