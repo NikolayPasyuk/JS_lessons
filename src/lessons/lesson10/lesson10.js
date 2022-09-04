@@ -15,35 +15,51 @@ console.log(Object.getOwnPropertyDescriptor(user, 'age'))
 console.log(Object.getOwnPropertyDescriptors(user))*/
 
 
-const user = {
-    name: 'Alex'
-}
+// const user = {
+//     name: 'Alex'
+// }
+//
+// const user1 = Object.create(Object.prototype, {
+//     name: {
+//         value: 'Alex',
+//         writable: true,
+//         enumerable: true,
+//         configurable: true
+//     }
+// })
+//
+// const user2 = {}
+//
+// Object.defineProperty(user2, 'name', {
+//     value: 'Alex',
+//     writable: true,
+//     enumerable: true,
+//     configurable: true
+// })
+//
+// const user3 = {}
+//
+// Object.defineProperties(user3, {
+//     name: {
+//         value: 'Alex',
+//         writable: true,
+//         enumerable: true,
+//         configurable: true
+//     }
+// })
 
-const user1 = Object.create(Object.prototype, {
-    name: {
-        value: 'Alex',
-        writable: true,
-        enumerable: true,
-        configurable: true
-    }
-})
 
-const user2 = {}
+//WRITABLE
 
-Object.defineProperty(user2, 'name', {
-    value: 'Alex',
-    writable: true,
-    enumerable: true,
-    configurable: true
-})
-
-const user3 = {}
-
-Object.defineProperties(user2, {
-    name: {
-        value: 'Alex',
-        writable: true,
-        enumerable: true,
-        configurable: true
-    }
-})
+// 'use strict'
+// const user = Object.create(Object.prototype, {
+//     name: {
+//         value: 'Alex',
+//         writable: false,
+//         enumerable: true,
+//         configurable: true
+//     }
+// })
+// user.name = 'Hanna'
+//
+// console.log(user)
