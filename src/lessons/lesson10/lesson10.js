@@ -63,3 +63,18 @@ console.log(Object.getOwnPropertyDescriptors(user))*/
 // user.name = 'Hanna'
 //
 // console.log(user)
+
+
+//ENUMERABLE
+const user = Object.create(Object.prototype, {
+    name: {
+        value: 'Alex',
+        writable: true,
+        enumerable: true,
+        configurable: true
+    }
+})
+
+console.log(Object.keys(user))
+
+
