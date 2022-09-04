@@ -5,6 +5,7 @@
 //Object.create
 //Object.defineProperty
 //Object.defineProperties
+//Object.preventExtensions
 
 /*const user = {
     name: 'Alex',
@@ -134,3 +135,12 @@ console.log(Object.getOwnPropertyDescriptors(user))*/
 //     configurable: false
 // })
 // console.log(user)
+
+
+const user = {
+    name: 'Alex'
+}
+Object.preventExtensions(user)
+
+user.age = 23
+console.log(user)
