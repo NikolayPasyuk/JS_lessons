@@ -77,4 +77,6 @@ const user = Object.create(Object.prototype, {
 
 console.log(Object.keys(user))
 
-
+for (let k in user) {
+    console.log(k)
+}
