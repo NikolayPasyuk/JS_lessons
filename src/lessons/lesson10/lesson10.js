@@ -6,4 +6,4 @@ const user = {
     name: 'Alex',
     age: 23
 }
-console.log(Object.getOwnPropertyDescriptor(user, 'name'))
+console.log(Object.getOwnPropertyDescriptors(user))
