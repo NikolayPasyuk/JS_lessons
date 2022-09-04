@@ -7,6 +7,7 @@
 //Object.defineProperties
 //Object.preventExtensions
 //Object.seal
+//Object.freeze
 
 /*const user = {
     name: 'Alex',
@@ -150,12 +151,27 @@ console.log(Object.getOwnPropertyDescriptors(user))*/
 
 //Object.seal
 
+// const user = {
+//     name: 'Alex'
+// }
+// Object.seal(user)
+//
+// user.age = 23
+//
+// delete user.name
+// console.log(user)
+
+
+//Object.freeze
+
 const user = {
     name: 'Alex'
 }
-Object.seal(user)
+Object.freeze(user)
 
 user.age = 23
 
 delete user.name
+
+user.name = 'Hanna'
 console.log(user)
