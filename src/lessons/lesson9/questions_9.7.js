@@ -348,6 +348,7 @@ console.log(obj)*/
 
 //Task 93
 
+/*
 const group = {
     name: 'Samurai-1',
     users: ['Alex'],
@@ -358,4 +359,4 @@ const group = {
         }, this)
     }
 }
-group.showUsersWithGroup()
+group.showUsersWithGroup()*/
