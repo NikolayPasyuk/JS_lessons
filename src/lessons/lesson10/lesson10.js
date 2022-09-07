@@ -164,14 +164,15 @@ console.log(Object.getOwnPropertyDescriptors(user))*/
 
 //Object.freeze
 
-const user = {
-    name: 'Alex'
-}
-Object.freeze(user)
+// const user = {
+//     name: 'Alex'
+// }
+// Object.freeze(user)
+//
+// user.age = 23
+//
+// delete user.name
+//
+// user.name = 'Hanna'
+// console.log(user)
 
-user.age = 23
-
-delete user.name
-
-user.name = 'Hanna'
-console.log(user)
