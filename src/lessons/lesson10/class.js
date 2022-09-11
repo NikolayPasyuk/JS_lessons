@@ -63,6 +63,64 @@ console.log(baseUser.MAX_USER_NAME_LENGTH)*/
 // console.log(baseUsr.name)
 
 
-
 //extends
 
+//FUNCTIONS
+// function Car() {
+// }
+//
+// Car.prototype.start = function () {
+// }
+//
+// function Ford() {
+// }
+//
+// Ford.prototype.__proto__ = Car.prototype
+//
+// const f = new Ford()
+//
+// f.start()
+
+
+// class Car {
+//
+//     static CAR_NAME = 'base'
+//
+//     start() {
+//         console.log('Started!')
+//     }
+// }
+//
+// class Ford extends Car {
+//
+// }
+//
+// const f = new Ford()
+//
+// f.start()
+
+
+// class Car {
+//
+//     constructor(name) {
+//         this.name = name
+//     }
+//
+//     start() {
+//         console.log('Started!')
+//     }
+//
+//     showName() {
+//         console.log(this.name)
+//     }
+// }
+//
+// class Ford extends Car {
+//     constructor(name, isUniversal) {
+//         super(name)
+//         this.isUniversal = isUniversal
+//     }
+// }
+//
+// const f = new Ford('Ford', true)
+// f.showName()
