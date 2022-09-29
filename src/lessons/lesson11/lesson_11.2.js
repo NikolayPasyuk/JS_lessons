@@ -84,3 +84,14 @@ const easyFilter = (arr, fn) => {
 }
 console.log(easyFilter(students, el => el.scores >= 100))
 console.log(students.filter(el => el.scores >= 100))
+
+
+const easyFind = (arr, fn) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (fn(arr[i]) === true) {
+            return arr[i]
+        }
+    }
+}
+console.log(easyFind(students, el => el.name === 'Alex'))
+console.log(students.find(el => el.name === 'Alex'))
