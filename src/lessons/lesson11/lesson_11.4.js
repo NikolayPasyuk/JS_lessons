@@ -45,3 +45,33 @@ console.log(numbers.reduce((acc, el) => acc + el, 0))
 
 
 console.log(numbers.reduce((acc, el) => acc > el ? acc : el))
+
+
+const students = [
+    {
+        name: 'Bob',
+        age: 22,
+        isMarried: true,
+        scores: 85
+    },
+    {
+        name: 'Alex',
+        age: 20,
+        isMarried: false,
+        scores: 120
+    },
+    {
+        name: 'Nick',
+        age: 20,
+        isMarried: false,
+        scores: 120
+    },
+    {
+        name: 'John',
+        age: 25,
+        isMarried: false,
+        scores: 100
+    }
+]
+
+console.log(students.reduce((acc, el) => acc.scores > el.scores ? acc : el))
