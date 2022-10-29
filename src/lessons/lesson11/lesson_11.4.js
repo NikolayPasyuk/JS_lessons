@@ -75,3 +75,9 @@ const students = [
 ]
 
 console.log(students.reduce((acc, el) => acc.scores > el.scores ? acc : el))
+
+console.log(students.reduce((acc, el) => {
+    const updatedStudent = {...el, scores: el.scores + 10}
+    acc.push(updatedStudent)
+    return acc
+}, []))
