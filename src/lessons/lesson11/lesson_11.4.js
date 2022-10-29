@@ -81,3 +81,10 @@ console.log(students.reduce((acc, el) => {
     acc.push(updatedStudent)
     return acc
 }, []))
+
+console.log(students.reduce((acc, el) => {
+    if (el.scores >= 100) {
+        acc.push(el)
+    }
+    return acc
+}, []))
