@@ -88,3 +88,22 @@ console.log(students.reduce((acc, el) => {
     }
     return acc
 }, []))
+
+const sts = {
+    'Bob': {
+        age: 22,
+        isMarried: true,
+        scores: 85
+    },
+    'Alex': {
+        age: 20,
+        isMarried: false,
+        scores: 120
+    }
+}
+
+console.log(students.reduce((acc, el) => {
+    acc[el.name] = {...el}
+    delete acc[el.name].name
+    return acc
+}, {}))
