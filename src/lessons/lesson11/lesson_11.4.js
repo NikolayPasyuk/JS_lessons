@@ -35,3 +35,10 @@ const tasks = {
 console.log([...tasks[todoListId_1], {id: 14, title: 'Redux', isDone: true}])
 console.log(tasks[todoListId_2].find(t => t.id === '21'))
 console.log(tasks[todoListId_1][2].title)
+
+
+//reduce
+
+const numbers = [1, 2, 3, 4, 5]
+
+console.log(numbers.reduce((acc, el) => acc + el, 0))
