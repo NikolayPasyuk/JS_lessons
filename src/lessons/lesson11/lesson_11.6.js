@@ -138,6 +138,6 @@
 const a = {} //Object prototype
 const b = {} //[[Prototype]] --> Object prototype
 
-b.__proto__ = null
 
-b.__proto__ = a //{ __proto__:a }
+// b.__proto__ === Object.getPrototypeOf(b)
+// b.__proto__ = a === Object.setPrototypeOf(b, a)
