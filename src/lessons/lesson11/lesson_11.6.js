@@ -57,13 +57,19 @@
 
 class User {
     static MAX_NAME_LENGTH = 20
-
-    constructor(name) {
+    static  validateUserName = (name) => {
         if (name.length > User.MAX_NAME_LENGTH) {
             throw new Error('Invalid name')
         }
+    }
+
+    constructor(name) {
+        User.validateUserName(name)
         this.name = name
     }
 }
 
 const alex = new User('Alex')
+
+
+
