@@ -107,20 +107,20 @@
 // ================= GET, SET ==================
 
 class User {
-    #firstName
-    #lastName
 
-    constructor(firstName, lastName) {
-        this.#firstName = firstName
-        this.#lastName = lastName
+    static LENGTH = 10
+    #name
+
+    constructor(name) {
+        this.#name = name
     }
 
     get name() {
-        console.log('GET')
-        return this.#firstName + '' + this.#lastName
+        return this.#name
     }
 
     set name(value) {
+        if (value.length > User.LENGTH) throw new Error('Invalid name')
         return this.#name = value
     }
 }
