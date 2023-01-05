@@ -107,23 +107,17 @@
 // ================= GET, SET ==================
 
 class User {
-    #name
+    #firstName
+    #lastName
 
-    constructor(name) {
-        this.#name = name
-    }
-
-    getName() {
-        return this.#name
-    }
-
-    setName(value) {
-        return this.#name = value
+    constructor(firstName, lastName) {
+        this.#firstName = firstName
+        this.#lastName = lastName
     }
 
     get name() {
         console.log('GET')
-        return this.#name
+        return this.#firstName + '' + this.#lastName
     }
 
     set name(value) {
