@@ -86,6 +86,26 @@
 
 // ====================== PRIVATE FIELD ======================
 
+// class User {
+//     #name
+//
+//     constructor(name) {
+//         this.#name = name
+//     }
+//
+//     getName() {
+//         return this.#name
+//     }
+// }
+//
+// const alex = new User('Alex')
+//
+// // console.log(alex.#name) -- Error
+// console.log(alex.getName())
+
+
+// ================= GET, SET ==================
+
 class User {
     #name
 
@@ -96,9 +116,13 @@ class User {
     getName() {
         return this.#name
     }
+
+    setName(value) {
+        return this.#name = value
+    }
 }
 
 const alex = new User('Alex')
 
-// console.log(alex.#name) -- Error
-console.log(alex.getName())
+alex.getName()
+alex.setName('New name')
