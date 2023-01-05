@@ -133,6 +133,8 @@ class User {
 
 const alex = new User('Alex')
 
+alex.name = 'New Name'
+
 console.log(alex.name)
 
 // alex.getName()
