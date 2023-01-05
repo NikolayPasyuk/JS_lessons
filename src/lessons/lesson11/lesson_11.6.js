@@ -55,11 +55,16 @@
 
 // ======================== static ====================
 
-
-function User() {
+class Test {
+    static defaultName = 'Default'
+    static hi = function () {
+    }
 }
 
-User.defaultName = 'Default'
-User.hi = function () {
-}
-console.dir(User)
+// function User() {
+// }
+//
+// User.defaultName = 'Default'
+// User.hi = function () {
+// }
+console.dir(Test)
