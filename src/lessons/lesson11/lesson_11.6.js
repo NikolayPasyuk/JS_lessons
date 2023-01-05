@@ -55,21 +55,50 @@
 
 // ======================== static ====================
 
+// class User {
+//     static MAX_NAME_LENGTH = 20
+//     static  validateUserName = (name) => {
+//         if (name.length > User.MAX_NAME_LENGTH) {
+//             throw new Error('Invalid name')
+//         }
+//     }
+//
+//     constructor(name) {
+//         User.validateUserName(name)
+//         this.name = name
+//     }
+// }
+//
+// const alex = new User('Alex')
+
+
+// class TodoApi {
+//     static getTodos() {
+//     }
+//
+//     static deleteTodo(id) {
+//     }
+// }
+//
+// TodoApi.getTodos()
+// TodoApi.deleteTodo()
+
+
+// ====================== PRIVATE FIELD ======================
+
 class User {
-    static MAX_NAME_LENGTH = 20
-    static  validateUserName = (name) => {
-        if (name.length > User.MAX_NAME_LENGTH) {
-            throw new Error('Invalid name')
-        }
-    }
+    #name
 
     constructor(name) {
-        User.validateUserName(name)
-        this.name = name
+        this.#name = name
+    }
+
+    getName() {
+        return this.#name
     }
 }
 
 const alex = new User('Alex')
 
-
-
+// console.log(alex.#name) -- Error
+console.log(alex.getName())
