@@ -1,6 +1,14 @@
 //class
 
 class User {
+
+    age = 23
+
+    someFunc = () => {
+    }
+    someFunc2 = () => {
+    }
+
     constructor() {
         this.name = name
     }
