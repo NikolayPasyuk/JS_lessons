@@ -32,8 +32,17 @@
 
 // ============== NOT CLEAN SUGAR ================
 
-//[[isClassConstructor]] ---> can not call without new
-class Test {}
+//1 [[isClassConstructor]] ---> can not call without new
+// class Test {}
 
-Test()// this --> undefined --> window
-new Test()// this --> {}
+// Test()// this --> undefined --> window
+// new Test()// this --> {}
+
+
+//2 string representation
+
+class Test {}
+function User(){}
+
+console.log(Test)
+console.log(User)
