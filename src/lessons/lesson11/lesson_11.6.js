@@ -146,6 +146,8 @@
 // =============== EXTENDS =================
 
 class Car {
+    static WHEELS_COUNT = 4
+
     run() {
         console.log('Car running')
     }
@@ -157,7 +159,4 @@ class Ford extends Car {
     }
 }
 
-const mondeo = new Ford()
-
-mondeo.fordRun()
-mondeo.run()
+console.log(Ford.WHEELS_COUNT)
