@@ -120,9 +120,21 @@ class User {
     setName(value) {
         return this.#name = value
     }
+
+    get name() {
+        console.log('GET')
+        return this.#name
+    }
+
+    set name(value) {
+        return this.#name = value
+    }
 }
 
 const alex = new User('Alex')
 
-alex.getName()
-alex.setName('New name')
+console.log(alex.name)
+
+// alex.getName()
+// alex.setName('New name')
+
