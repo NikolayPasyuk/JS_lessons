@@ -1,12 +1,22 @@
 //class
 
-function User(name) {
-    this.name = name
-}
+class User {
+    constructor() {
+        this.name = name
+    }
 
-User.prototype.sayHi = function () {
-    console.log(this.name)
+    sayHi() {
+        console.log(this.name)
+    }
 }
 
 const user = new User('Alex')
 console.log(user)
+
+// function User(name) {
+//     this.name = name
+// }
+
+// User.prototype.sayHi = function () {
+//     console.log(this.name)
+// }
