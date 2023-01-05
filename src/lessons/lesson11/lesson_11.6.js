@@ -145,24 +145,19 @@
 
 // =============== EXTENDS =================
 
-function Car() {
+class Car {
+    run() {
+        console.log('Car running')
+    }
 }
 
-Car.prototype.run = function () {
-    console.log(this.model + '' + 'running')
+class Ford extends Car {
+    fordRun() {
+        console.log('Ford running')
+    }
 }
 
-function Ford(model) {
-    this.model = model
-}
-
-Ford.prototype.fordRun = function () {
-    console.log('Ford run')
-}
-
-Ford.prototype.__proto__ = Car.prototype
-
-const mondeo = new Ford('Mondeo')
+const mondeo = new Ford()
 
 mondeo.fordRun()
 mondeo.run()
