@@ -106,31 +106,38 @@
 
 // ================= GET, SET ==================
 
-class User {
-
-    static LENGTH = 10
-    #name
-
-    constructor(name) {
-        this.#name = name
-    }
-
-    get name() {
-        return this.#name
-    }
-
-    set name(value) {
-        if (value.length > User.LENGTH) throw new Error('Invalid name')
-        return this.#name = value
-    }
-}
-
-const alex = new User('Alex')
-
-alex.name = 'New Name'
-
-console.log(alex.name)
+// class User {
+//
+//     static LENGTH = 10
+//     #name
+//
+//     constructor(name) {
+//         this.#name = name
+//     }
+//
+//     get name() {
+//         return this.#name
+//     }
+//
+//     set name(value) {
+//         if (value.length > User.LENGTH) throw new Error('Invalid name')
+//         return this.#name = value
+//     }
+// }
+//
+// const alex = new User('Alex')
+//
+// alex.name = 'New Name'
+//
+// console.log(alex.name)
 
 // alex.getName()
 // alex.setName('New name')
 
+
+const a = {} //Object prototype
+const b = {} //[[Prototype]] --> Object prototype
+
+b.__proto__ = null
+
+b.__proto__ = a //{ __proto__:a }
