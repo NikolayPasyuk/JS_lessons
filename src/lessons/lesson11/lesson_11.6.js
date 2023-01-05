@@ -52,3 +52,14 @@
 
 //4 все методы класса являются неперечисляемыми
 
+
+// ======================== static ====================
+
+
+function User() {
+}
+
+User.defaultName = 'Default'
+User.hi = function () {
+}
+console.dir(User)
