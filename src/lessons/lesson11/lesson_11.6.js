@@ -135,9 +135,34 @@
 // alex.setName('New name')
 
 
-const a = {} //Object prototype
-const b = {} //[[Prototype]] --> Object prototype
+// const a = {} //Object prototype
+// const b = {} //[[Prototype]] --> Object prototype
 
 
 // b.__proto__ === Object.getPrototypeOf(b)
 // b.__proto__ = a === Object.setPrototypeOf(b, a)
+
+
+// =============== EXTENDS =================
+
+function Car() {
+}
+
+Car.prototype.run = function () {
+    console.log(this.model + '' + 'running')
+}
+
+function Ford(model) {
+    this.model = model
+}
+
+Ford.prototype.fordRun = function () {
+    console.log('Ford run')
+}
+
+Ford.prototype.__proto__ = Car.prototype
+
+const mondeo = new Ford('Mondeo')
+
+mondeo.fordRun()
+mondeo.run()
