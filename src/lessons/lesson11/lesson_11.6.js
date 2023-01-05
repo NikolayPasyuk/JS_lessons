@@ -145,18 +145,37 @@
 
 // =============== EXTENDS =================
 
-class Car {
-    static WHEELS_COUNT = 4
+// class Car {
+//     static WHEELS_COUNT = 4
+//
+//     run() {
+//         console.log('Car running')
+//     }
+// }
+//
+// class Ford extends Car {
+//     fordRun() {
+//         console.log('Ford running')
+//     }
+// }
+//
+// console.log(Ford.WHEELS_COUNT)
 
-    run() {
-        console.log('Car running')
+
+// ====================== super ===============
+
+class Car {
+    constructor(name) {
+        this.name = name
     }
 }
 
 class Ford extends Car {
-    fordRun() {
-        console.log('Ford running')
+    constructor(name, age) {
+        super(name)
+        this.age = age
     }
 }
 
-console.log(Ford.WHEELS_COUNT)
+const ford = new Ford('Mondeo', 23)
+console.log(ford)
