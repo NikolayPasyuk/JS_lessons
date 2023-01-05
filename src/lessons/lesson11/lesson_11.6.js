@@ -41,8 +41,11 @@
 
 //2 string representation
 
-class Test {}
-function User(){}
+// class Test {}
+// function User(){}
 
-console.log(Test)
-console.log(User)
+// console.log(Test)
+// console.log(User)
+
+
+//3 inside class ---> use strict
