@@ -55,16 +55,15 @@
 
 // ======================== static ====================
 
-class Test {
-    static defaultName = 'Default'
-    static hi = function () {
+class User {
+    static MAX_NAME_LENGTH = 20
+
+    constructor(name) {
+        if (name.length > User.MAX_NAME_LENGTH) {
+            throw new Error('Invalid name')
+        }
+        this.name = name
     }
 }
 
-// function User() {
-// }
-//
-// User.defaultName = 'Default'
-// User.hi = function () {
-// }
-console.dir(Test)
+const alex = new User('Alex')
