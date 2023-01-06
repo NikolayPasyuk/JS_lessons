@@ -164,18 +164,18 @@
 
 // ====================== super ===============
 
-class Car {
-    constructor(name) {
-        this.name = name
-    }
-}
-
-class Ford extends Car {
-    constructor(name, age) {
-        super(name)
-        this.age = age
-    }
-}
-
-const ford = new Ford('Mondeo', 23)
-console.log(ford)
+// class Car {
+//     constructor(name) {
+//         this.name = name
+//     }
+// }
+//
+// class Ford extends Car {
+//     constructor(name, age) {
+//         super(name)
+//         this.age = age
+//     }
+// }
+//
+// const ford = new Ford('Mondeo', 23)
+// console.log(ford)
