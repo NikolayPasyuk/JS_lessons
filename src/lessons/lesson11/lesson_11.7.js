@@ -106,8 +106,24 @@
 
 //-- function called with new keyword
 
-function foo() {
-    console.log(this) //{}
-}
+// function foo() {
+//     console.log(this) //{}
+// }
+//
+// new foo()
 
-new foo()
+
+//3. Arrow functions ---> this берется из внешнего скоупа
+
+const foo = () => {
+    console.log(this)
+}
+foo()
+
+const user = {
+    age: 23,
+    showAge: () => {
+        console.log(this.age)
+    }
+}
+user.showAge()
