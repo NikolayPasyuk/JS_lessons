@@ -70,17 +70,32 @@
 
 //-- using call bind apply methods
 
+// const alex = {
+//     name: 'Alex'
+// }
+//
+// const hanna = {
+//     name: 'Hanna'
+// }
+//
+// function foo(a, b) {
+//     console.log(this)
+// }
+
+// foo.call(alex, 1, 2)
+// foo.apply(alex, [1, 2])
+// foo.bind(alex)(1, 2)
+
+
 const alex = {
-    name: 'Alex'
+    age: 23,
+    showAge() {
+        console.log(this.age)
+    }
 }
 
-const hanna = {
-    name: 'Hanna'
+function foo(cb) {
+    cb()
 }
 
-function foo(a, b) {
-    console.log(this)
-}
-
-foo.call(alex, 1, 2)
-foo.apply(alex, [1, 2])
+foo(alex.showAge.bind(alex))
