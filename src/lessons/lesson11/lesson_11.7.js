@@ -78,9 +78,9 @@ const hanna = {
     name: 'Hanna'
 }
 
-function foo() {
+function foo(a, b) {
     console.log(this)
 }
 
-foo.call(alex)
-foo.call(hanna)
+foo.call(alex, 1, 2)
+foo.apply(alex, [1, 2])
