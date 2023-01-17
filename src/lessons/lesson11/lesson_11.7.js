@@ -98,4 +98,7 @@ function foo(cb) {
     cb()
 }
 
-foo(alex.showAge.bind(alex))
+setTimeout(alex.showAge.bind(alex), 1000)
+setTimeout(() => {
+    alex.showAge()
+}, 1000)
