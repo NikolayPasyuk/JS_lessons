@@ -41,28 +41,46 @@
 
 //-- called on behalf of an object ---> this = тому что слева от точки
 
+// function foo() {
+//     console.log(this)
+// }
+//
+// const user = {
+//     foo: foo
+// }
+//
+// foo() //window
+// user.foo() //user
+//
+// const alex = {
+//     name: 'Alex',
+//     showName() {
+//         console.log(this.name)
+//     }
+// }
+//
+// const hanna = {
+//     name: 'Hanna',
+//     showName: alex.showName
+// }
+//
+// alex.showName() //alex
+// hanna.showName() //hanna
+
+
+//-- using call bind apply methods
+
+const alex = {
+    name: 'Alex'
+}
+
+const hanna = {
+    name: 'Hanna'
+}
+
 function foo() {
     console.log(this)
 }
 
-const user = {
-    foo: foo
-}
-
-foo() //window
-user.foo() //user
-
-const alex = {
-    name: 'Alex',
-    showName() {
-        console.log(this.name)
-    }
-}
-
-const hanna = {
-    name: 'Hanna',
-    showName: alex.showName
-}
-
-alex.showName() //alex
-hanna.showName() //hanna
+foo.call(alex)
+foo.call(hanna)
