@@ -20,10 +20,21 @@
 
 //1. Global Scope ---> global object(window)
 
-console.log(this)
+// console.log(this)
+//
+// console.log(this === window)
+//
+// this.age = 23
+//
+// console.log(window.age)
 
-console.log(this === window)
 
-this.age = 23
+//2. Inside Functions (not arrow function) ---> как именно вызывается функция!!!
 
-console.log(window.age)
+//--simple call ---> this === undefined (!use strict === window)
+
+function foo() {
+    console.log(this)
+}
+
+foo()
