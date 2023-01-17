@@ -87,18 +87,27 @@
 // foo.bind(alex)(1, 2)
 
 
-const alex = {
-    age: 23,
-    showAge() {
-        console.log(this.age)
-    }
+// const alex = {
+//     age: 23,
+//     showAge() {
+//         console.log(this.age)
+//     }
+// }
+//
+// function foo(cb) {
+//     cb()
+// }
+//
+// setTimeout(alex.showAge.bind(alex), 1000)
+// setTimeout(() => {
+//     alex.showAge()
+// }, 1000)
+
+
+//-- function called with new keyword
+
+function foo() {
+    console.log(this) //{}
 }
 
-function foo(cb) {
-    cb()
-}
-
-setTimeout(alex.showAge.bind(alex), 1000)
-setTimeout(() => {
-    alex.showAge()
-}, 1000)
+new foo()
