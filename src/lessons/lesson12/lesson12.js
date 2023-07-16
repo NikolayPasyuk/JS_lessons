@@ -1,11 +1,11 @@
-// Написать функцию проверки слова на палиндром
+// 1.Написать функцию проверки слова на палиндром
 function isPalindrome(word) {
     const reversed = word.split('').reverse().join('');
     return word === reversed;
 }
 
 
-// Написать функцию проверки на простое число (циклом и рекурсией)
+// 2.Написать функцию проверки на простое число (циклом и рекурсией)
 
 // Проверка простого числа с помощью цикла
 function isPrimeLoop(n) {
@@ -32,4 +32,15 @@ function isPrimeRecursion(n, i = 2) {
         return false;
     }
     return isPrimeRecursion(n, i + 1);
+}
+
+
+// 3.Написать функцию на нахождение факториала числа (рекурсией)
+
+function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
 }
