@@ -115,15 +115,15 @@
 
 //3. Arrow functions ---> this берется из внешнего скоупа
 
-const foo = () => {
-    console.log(this)
-}
-foo()
-
-const user = {
-    age: 23,
-    showAge: () => {
-        console.log(this.age)
-    }
-}
-user.showAge()
+// const foo = () => {
+//     console.log(this)
+// }
+// foo()
+//
+// const user = {
+//     age: 23,
+//     showAge: () => {
+//         console.log(this.age)
+//     }
+// }
+// user.showAge()
